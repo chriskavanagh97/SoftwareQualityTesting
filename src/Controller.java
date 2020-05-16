@@ -39,9 +39,9 @@ String a ="quality";
 
     }
 
-    public Survey SurveyMultipleQuestions(ArrayList<Question> questions )
+    public Survey SurveyMultipleQuestions(String surveyname,  ArrayList<Question> questions )
     {
-        Survey createSurvey = new Survey("surveyname", questions);
+        Survey createSurvey = new Survey(surveyname, questions);
 
 
         return createSurvey;
