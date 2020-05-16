@@ -70,3 +70,17 @@ To demonstrate my taught process of task estimation I will compare two of my tas
 **Task 1 :** As you can see the majority of questions are answered in Task 1, including no.2 stating I find it technically difficult. For this reason I believe it is a complex task which should be ranked 34.
 
 **Task 2 :** I have stated I do not find it technically difficult and also say I have good experience with it. The majority of tasks are also answered no indicating it is not a complex task for this reason I have ranked it 2
+
+#### Velocity calculation
+
+ There are 8 levels to my estimation system with this I have ranked them 1 - 8 based on their difficulty.
+ 
+ For eg: Any task ranked 34 will be given a velocity value of 8, 21 is given a velocity value of 7 and follow this pattern until the bottom value of 1.
+ 
+ Overall there is a velocity of 71. when I complete a task i add it to my completed tasks. The total of my completed tasks will be compared to the velocity total to indicate the % of work I have done so far. In terms of a time measuring tool I have given 10 points to represent an hour. 
+ 
+ With this using my previous example it helps me plan how long I need to work for task 2 should only take me 12 - 15 minutes. while task 1 should take me 3 just over 3 hours.
+ 
+ Although it is important to remember to not [misuse the velocity tool](https://innolution.com/essential-scrum/table-of-contents/chapter-7-estimation-and-velocity) 
+ 
+ >"Velocity should not be used as a performance metric to judge team productivity. Instead, velocity should assist teams with performing accurate planning and with improving internally. Any other uses will likely promote the wrong behavior."
