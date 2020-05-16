@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33b41014-1174-42bd-8eb5-4c7c4cf7feb7" name="Default Changelist" comment="" />
+    <list default="true" id="33b41014-1174-42bd-8eb5-4c7c4cf7feb7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,12 +80,20 @@
       <option name="project" value="LOCAL" />
       <updated>1589649782380</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Controller class established">
+      <created>1589650642231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589650642231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="branch created" />
     <MESSAGE value="Pulled from develop class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pulled from develop class" />
+    <MESSAGE value="Controller class established" />
+    <option name="LAST_COMMIT_MESSAGE" value="Controller class established" />
   </component>
 </project>
