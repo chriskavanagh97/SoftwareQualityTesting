@@ -48,3 +48,25 @@ There isn’t a set point system for each value it just allows me to think into 
 *	Get standard deviation for a specific question on a survey- 34
 *	Get maximum score for a specific question on a survey- 13
 *	Get minimum score for a specific question on a survey- 13
+
+**Comparison of two tasks**
+To demonstrate my taught process of task estimation I will compare two of my tasks
+
+1. Getting all survey answers associated with a specific survey
+2. Adding a selection to a survey answer
+
+| Question 	| Task 1 	| Task 2 	|
+|----------	|--------	|--------	|
+| 1        	| No    	 | Yes     |
+| 2        	| Yes    	| No     	|
+| 3        	| Yes    	| No     	|
+| 4        	| No    	 | Yes     |
+| 5        	| Yes     | No    	 |
+| 6        	| Yes    	| No    	 |
+| 7        	| Yes    	| Yes     |
+| 8        	| Yes    	| No     	|
+| 9        	| Yes    	| No     	|
+
+**Task 1 :** As you can see the majority of questions are answered in Task 1, including no.2 stating I find it technically difficult. For this reason I believe it is a complex task which should be ranked 34.
+
+**Task 2 :** I have stated I do not find it technically difficult and also say I have good experience with it. The majority of tasks are also answered no indicating it is not a complex task for this reason I have ranked it 2
