@@ -9,6 +9,8 @@ public class TestJunit {
 
     ArrayList<Survey> surveys = new ArrayList<>();
 
+    Controller controller = new Controller("first survey");
+
     @Test
     public void CreatingSurvey() {
 
@@ -16,7 +18,7 @@ public class TestJunit {
         Controller controller = new Controller("first survey");
 
 
-        assertEquals("first survey", Controller.CreateSurvey().getName());
+        assertEquals("first survey", controller.CreateSurvey().getName());
 
     }
 
@@ -24,7 +26,7 @@ public class TestJunit {
     public void SurveyAddQuestion()
     {
 
-        assertEquals("Overall Quality",Controller.createSurveyQuestions("Service Quality", "Overall Quality").getName());
+        assertEquals("Overall Quality",controller.createSurveyQuestions().getName());
     }
 
     @Test
@@ -40,7 +42,7 @@ public class TestJunit {
         surveys.add(survey2);
         surveys.add(survey3);
 
-        assertEquals(3, Controller.MultipleSurveys(surveys).size());
+        assertEquals(3, controller.MultipleSurveys(surveys).size());
 
     }
 }
