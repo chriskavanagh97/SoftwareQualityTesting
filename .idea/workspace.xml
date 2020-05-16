@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba4fa076-9677-4032-a894-bbeec76ab85b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarIssues.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarIssues.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +42,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589639986236</updated>
-      <workItem from="1589639991334" duration="807000" />
+      <workItem from="1589639991334" duration="1003000" />
     </task>
     <task id="LOCAL-00001" summary="Added in the README file">
       <created>1589640251999</created>
@@ -53,7 +51,21 @@
       <option name="project" value="LOCAL" />
       <updated>1589640251999</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added in the README file">
+      <created>1589640816630</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589640816630</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Introduction for Sprint Backlog added">
+      <created>1589640873332</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589640873332</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -72,6 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added in the README file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added in the README file" />
+    <MESSAGE value="Introduction for Sprint Backlog added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduction for Sprint Backlog added" />
   </component>
 </project>
