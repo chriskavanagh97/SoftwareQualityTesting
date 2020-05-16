@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
 public class Controller {
-
-    String a;
+String a ="quality";
 
     public Controller(String a)
     {
@@ -12,31 +11,31 @@ public class Controller {
 
     public Survey CreateSurvey()
     {
-        Survey createSurvey = new Survey("a");
+        Survey createSurvey = new Survey(a);
         return createSurvey;
     }
 
 
-    public Survey createSurveyQuestions()
+    public Survey createSurveyQuestions(String questionname,String surveytitle )
     {
         //Creation of question object
-        Question firstquestion = new Question("questionname");
+        Question firstquestion = new Question(questionname);
         //Collection to represent questions
         ArrayList<Question> questions = new ArrayList<Question>();
         //adding question to list
         questions.add(firstquestion);
 
-        Survey firstquestionsurvey = new Survey("surveytitle" ,questions);
+        Survey firstquestionsurvey = new Survey(surveytitle ,questions);
 
         return firstquestionsurvey;
 
     }
 
-    public ArrayList<Survey> MultipleSurveys() {
+    public ArrayList<Survey> MultipleSurveys(ArrayList<Survey>surveys) {
 
 
 
-        return MultipleSurveys();
+        return surveys;
 
     }
 }

@@ -26,7 +26,7 @@ public class TestJunit {
     public void SurveyAddQuestion()
     {
 
-        assertEquals("Overall Quality",controller.createSurveyQuestions().getName());
+        assertEquals("Overall Quality",controller.createSurveyQuestions("Service Quality", "Overall Quality").getName());
     }
 
     @Test
