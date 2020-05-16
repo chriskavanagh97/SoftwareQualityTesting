@@ -46,7 +46,6 @@ public class TestJunit {
 
         assertTrue(newsurvey.getQuestions().contains(one));
 
-
     }
 
 

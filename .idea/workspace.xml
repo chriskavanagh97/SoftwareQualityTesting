@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33b41014-1174-42bd-8eb5-4c7c4cf7feb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-    </list>
+    <list default="true" id="33b41014-1174-42bd-8eb5-4c7c4cf7feb7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -122,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589652134402</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="All 4 tests Pass">
+      <created>1589652171770</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589652171770</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -134,6 +138,7 @@
     <MESSAGE value="Functions code edited 3 tests PASS" />
     <MESSAGE value="4th Survey Test created" />
     <MESSAGE value="3 test PASS 1 test FAIL. Must correct functionality for most recent test for it to pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 test PASS 1 test FAIL. Must correct functionality for most recent test for it to pass" />
+    <MESSAGE value="All 4 tests Pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="All 4 tests Pass" />
   </component>
 </project>

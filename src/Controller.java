@@ -26,7 +26,6 @@ String a ="quality";
         questions.add(firstquestion);
 
         Survey firstquestionsurvey = new Survey(surveytitle ,questions);
-
         return firstquestionsurvey;
 
     }
