@@ -8,6 +8,8 @@ public class Survey {
     //Collection to represent questions
     private ArrayList<Question> questions = new ArrayList<Question>();
     //Collection to represent survey responses
+    private ArrayList<SurveyResponse> responses = new ArrayList<SurveyResponse>();
+
 
     //Empty Constructor to make blank survey
     public Survey()
