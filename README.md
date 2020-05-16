@@ -28,3 +28,15 @@ Do these changes match the function requirements. Are the changes implemented fu
 #### 3. **Can it be easily tested or debugged**
 
 Can the code added be easily tested and debugged if there is an error in the project functionality.
+
+#### 4. **Can this solution be simplified further**
+
+Here I should look through the code and ensure that I haven't over complicated my code. It is to ensure that I have coded in the most simplist way possible over complex codee can lead to future errors and confusion
+
+#### 5. **Is this code repeated**
+
+Code duplication should be checked, if there is code written for the same porpose in the project, that code should be removed or corrected.
+
+#### 6. **Is there documentation**
+
+Do comments exist that describe the intent of the code? Are all functions commented. If there is any incomplete code is this flagged with a suitable marker such as "TODO" 
