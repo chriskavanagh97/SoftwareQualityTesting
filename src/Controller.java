@@ -38,4 +38,12 @@ String a ="quality";
         return surveys;
 
     }
+
+    public Survey SurveyMultipleQuestions(ArrayList<Question> questions )
+    {
+        Survey createSurvey = new Survey("surveyname", questions);
+
+
+        return createSurvey;
+    }
 }
