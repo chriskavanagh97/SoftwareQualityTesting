@@ -44,7 +44,6 @@ String a ="quality";
         //creating a new survey with the name and list of questions
         Survey createSurvey = new Survey(surveyname, questions);
 
-
         return createSurvey;
     }
 }

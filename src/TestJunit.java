@@ -46,10 +46,7 @@ public class TestJunit {
         Survey newsurvey = controller.SurveyMultipleQuestions("MyQuestions", questions);
 
         assertTrue(newsurvey.getQuestions().contains(one));
-
     }
-
-
 
     @Test
     public void TestingMultipleSurveys()
