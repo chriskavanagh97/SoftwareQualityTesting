@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba4fa076-9677-4032-a894-bbeec76ab85b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="ba4fa076-9677-4032-a894-bbeec76ab85b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589639986236</updated>
-      <workItem from="1589639991334" duration="1003000" />
+      <workItem from="1589639991334" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="Added in the README file">
       <created>1589640251999</created>
@@ -65,7 +63,35 @@
       <option name="project" value="LOCAL" />
       <updated>1589640873332</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added in Criteria for my task estimation">
+      <created>1589641042618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589641042618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added in Task estimation scores">
+      <created>1589641132203</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589641132203</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Comparison of Two tasks added">
+      <created>1589641172518</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589641172518</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Velocity Calculation">
+      <created>1589641224153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589641224153</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +111,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added in the README file" />
     <MESSAGE value="Introduction for Sprint Backlog added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduction for Sprint Backlog added" />
+    <MESSAGE value="Added in Criteria for my task estimation" />
+    <MESSAGE value="Added in Task estimation scores" />
+    <MESSAGE value="Comparison of Two tasks added" />
+    <MESSAGE value="Velocity Calculation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Velocity Calculation" />
   </component>
 </project>
