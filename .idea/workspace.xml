@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33b41014-1174-42bd-8eb5-4c7c4cf7feb7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Survey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Survey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589657065834</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=".">
+      <created>1589657645865</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589657645865</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -153,6 +158,7 @@
     <MESSAGE value="3 test PASS 1 test FAIL. Must correct functionality for most recent test for it to pass" />
     <MESSAGE value="All 4 tests Pass" />
     <MESSAGE value="Added test to ensure no empty tests are allowed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added test to ensure no empty tests are allowed" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>

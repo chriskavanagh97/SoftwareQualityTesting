@@ -34,6 +34,7 @@ public class TestJunit {
     @Test
     public void addMultipleQuestions()
     {
+        //Here I am testing that a user can create a survey with multiple questions
         Question one = new Question("Customer Service");
         Question Two = new Question("Cleanliness");
         //Collection to represent questions
