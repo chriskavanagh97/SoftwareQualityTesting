@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33b41014-1174-42bd-8eb5-4c7c4cf7feb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
-    </list>
+    <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,84 +77,12 @@
       <option name="project" value="LOCAL" />
       <updated>1589649782380</updated>
     </task>
-    <task id="LOCAL-00002" summary="Controller class established">
-      <created>1589650642231</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1589650642231</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Tests added in for Survey">
-      <created>1589651310285</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1589651310285</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Functionality code added for Survey, 3 failed tests (code needs to be changed to facilitate Tests)">
-      <created>1589651545496</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1589651545496</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Functions code edited 3 tests PASS">
-      <created>1589651622434</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1589651622434</updated>
-    </task>
-    <task id="LOCAL-00006" summary="4th Survey Test created">
-      <created>1589652023620</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1589652023620</updated>
-    </task>
-    <task id="LOCAL-00007" summary="3 test PASS 1 test FAIL. Must correct functionality for most recent test for it to pass">
-      <created>1589652134402</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1589652134402</updated>
-    </task>
-    <task id="LOCAL-00008" summary="All 4 tests Pass">
-      <created>1589652171770</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1589652171770</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added test to ensure no empty tests are allowed">
-      <created>1589657065834</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1589657065834</updated>
-    </task>
-    <task id="LOCAL-00010" summary=".">
-      <created>1589657645865</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1589657645865</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="branch created" />
     <MESSAGE value="Pulled from develop class" />
-    <MESSAGE value="Controller class established" />
-    <MESSAGE value="Tests added in for Survey" />
-    <MESSAGE value="Functionality code added for Survey, 3 failed tests (code needs to be changed to facilitate Tests)" />
-    <MESSAGE value="Functions code edited 3 tests PASS" />
-    <MESSAGE value="4th Survey Test created" />
-    <MESSAGE value="3 test PASS 1 test FAIL. Must correct functionality for most recent test for it to pass" />
-    <MESSAGE value="All 4 tests Pass" />
-    <MESSAGE value="Added test to ensure no empty tests are allowed" />
-    <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="Pulled from develop class" />
   </component>
 </project>
