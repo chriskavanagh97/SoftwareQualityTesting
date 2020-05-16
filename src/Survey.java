@@ -14,7 +14,7 @@ public class Survey {
     //Empty Constructor to make blank survey
     public Survey()
     {
-
+        throw new IllegalArgumentException("Survey must have a name" );
     }
 
     //Allowing me to make a survey with multiple questions and a name
@@ -40,8 +40,9 @@ public class Survey {
         return name;
     }
     public void setName(String name) {
-        this.name = name;
-    }
+            this.name = name;
+        }
+
     public ArrayList<Question> getQuestions() {
         return questions;
     }

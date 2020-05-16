@@ -71,22 +71,10 @@ public class TestJunit {
     public void questionAnswerValue()
     {
 
-        Survey survey1 = new Survey("Second Survey");
+        Survey survey1 = new Survey();
         Survey survey2 = new Survey("Second Survey");
         Survey survey3 = new Survey("Third Survey");
 
-        if (survey1.getName().isEmpty()){
-        throw new IllegalArgumentException("Survey must have a name" );
-    }
-        else if(survey2.getName().isEmpty())
-        {
-            throw new IllegalArgumentException("Survey must have a name" );
-        }
-        else if(survey3.getName().isEmpty())
-        {
-            throw new IllegalArgumentException("Survey must have a name" );
-        }
-        else {
             surveys.add(survey1);
             surveys.add(survey2);
             surveys.add(survey3);
@@ -94,4 +82,4 @@ public class TestJunit {
         }
     }
 
-}
+
