@@ -7,7 +7,17 @@ public class Question {
 
     //Question constructor
     public Question(String question) {
-        this.question = question;
+
+        if (question.equalsIgnoreCase("")) {
+
+            throw new IllegalArgumentException("Question must have a name" );
+
+        }
+        else {
+
+
+            this.question = question;
+        }
 
     }
 
