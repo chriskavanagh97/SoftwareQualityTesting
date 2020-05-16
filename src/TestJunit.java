@@ -78,6 +78,26 @@ public class TestJunit {
             surveys.add(survey3);
 
         }
+        //========================================================================================================
+        //Tests for Questions
+        //========================================================================================================
+
+    @Test
+    public void CreateQuestion() {
+
     }
+
+        @Test(expected = IllegalArgumentException.class)
+        public void BlankQuestion()
+        {
+
+            Question question = new Question("");
+            Question question2 = new Question("");
+
+
+
+        }
+    }
+
 
 
