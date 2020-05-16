@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33b41014-1174-42bd-8eb5-4c7c4cf7feb7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589651545496</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Functions code edited 3 tests PASS">
+      <created>1589651622434</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589651622434</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -111,6 +117,7 @@
     <MESSAGE value="Controller class established" />
     <MESSAGE value="Tests added in for Survey" />
     <MESSAGE value="Functionality code added for Survey, 3 failed tests (code needs to be changed to facilitate Tests)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Functionality code added for Survey, 3 failed tests (code needs to be changed to facilitate Tests)" />
+    <MESSAGE value="Functions code edited 3 tests PASS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Functions code edited 3 tests PASS" />
   </component>
 </project>
