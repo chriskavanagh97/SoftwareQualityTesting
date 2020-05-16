@@ -26,3 +26,25 @@ Creteria:
 7.	Is a test required
 8.	Does It include retrieving information from a specified item in a list
 9.	Does it include a 2nd method? 
+
+There isn’t a set point system for each value it just allows me to think into the technical difficulty of each task. For example, if a task involves 5, 6, 7, 8 and answers no to 1 and yes to 2 well then it will be very difficult and will rank as 32. Then if something answers yes to 1 and no to 2 and only involves 3 well then it would rank as 1 as I would naturally find this easy. It is all based on how my personal opinion naturally would be different in a team.
+
+
+#### Tasks
+
+**Tasks involved with functionality coding**
+
+*	Create survey - 1
+*	Add a question and answers to the survey - 1
+*	Get a list of all surveys - 8
+*	Get a survey by name - 8
+*	Creating a survey answer - 5
+*	Adding a selection to a survey answer - 2
+*	Getting all survey answers associated with a specific survey - 34
+*	Get average deviation of a survey - 21
+*	Get standard deviation of a survey - 34
+*	Get maximum score of a survey - 8
+*	Get minimum score of a survey - 8
+*	Get standard deviation for a specific question on a survey- 34
+*	Get maximum score for a specific question on a survey- 13
+*	Get minimum score for a specific question on a survey- 13
