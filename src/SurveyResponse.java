@@ -3,10 +3,12 @@ import java.util.ArrayList;
 public class SurveyResponse {
 
     ArrayList<Question> questions = new ArrayList<Question>();
+    String surveyname;
 
     //Questions from the survey
-    public SurveyResponse(ArrayList<Question> questions)
+    public SurveyResponse(String surveyname, ArrayList<Question> questions)
     {
+        this.surveyname = surveyname;
         this.questions = questions;
     }
 

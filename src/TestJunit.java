@@ -110,10 +110,30 @@ public class TestJunit {
             Question question = new Question("");
             Question question2 = new Question("");
 
-
-
         }
+
+    //========================================================================================================
+    //Tests for Survey Responses
+    //========================================================================================================
+
+    @Test
+    public void surveyResponseCreationTest()
+    {
+        Survey survey = new Survey("Survey Test");
+        Question one = new Question("Customer Service");
+        Question Two = new Question("Cleanliness");
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        String surveyname = survey.getName();
+
+        SurveyResponse surveyresponse = controller.SurveyResponseCreation("surveyname", questions);
+        assertTrue(surveyresponse instanceof SurveyResponse);
+
     }
+
+
+}
 
 
 
