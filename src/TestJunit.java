@@ -11,6 +11,7 @@ public class TestJunit {
     ArrayList<Survey> surveys = new ArrayList<>();
 
     Controller controller = new Controller("first survey");
+    ArrayList<Question> questions = new ArrayList<Question>();
 
     @Test
     public void CreatingSurvey() {
@@ -38,7 +39,7 @@ public class TestJunit {
         Question one = new Question("Customer Service");
         Question Two = new Question("Cleanliness");
         //Collection to represent questions
-        ArrayList<Question> questions = new ArrayList<Question>();
+
         //adding question to list
         questions.add(one);
         questions.add(Two);
@@ -68,7 +69,7 @@ public class TestJunit {
     @Test(expected = IllegalArgumentException.class)
     public void questionAnswerValue()
     {
-
+        //Here I am testing that a user cannot make a survey with an empty string
         Survey survey1 = new Survey();
         Survey survey2 = new Survey("Second Survey");
         Survey survey3 = new Survey("Third Survey");
@@ -89,7 +90,6 @@ public class TestJunit {
         Question one = new Question("Customer Service");
         Question Two = new Question("Cleanliness");
         //Collection to represent questions
-        ArrayList<Question> questions = new ArrayList<Question>();
         //adding question to list
         questions.add(one);
         questions.add(Two);
@@ -105,6 +105,7 @@ public class TestJunit {
         @Test(expected = IllegalArgumentException.class)
         public void BlankQuestion()
         {
+            //Here I am testing that a user can't make a question with an empty string
 
             Question question = new Question("");
             Question question2 = new Question("");
