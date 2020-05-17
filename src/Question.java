@@ -35,6 +35,15 @@ public class Question {
     }
 
     public void setAnswer(int answer) {
-        this.answer = answer;
+        //I am adding in validation for question answers
+        if(answer < 1 || answer > 5)
+        {
+            throw new IllegalArgumentException("Your must answer with a value between 1 and 5 " + answer );
+        }
+        //If the answer is between 1 and 5 it will be set as normal
+        else
+        {
+            this.answer = answer;
+        }
     }
 }

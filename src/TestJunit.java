@@ -116,7 +116,7 @@ public class TestJunit {
         //Here I am testing can a user input an answer
         Question one = new Question("Quality");
         controller.questionAnswer(one, 3);
-        assertEquals(1, one.getAnswer());
+        assertEquals(3, one.getAnswer());
 
     }
 
@@ -124,7 +124,7 @@ public class TestJunit {
     public void NegativeanswerValue()
     {
         Question one = new Question("Food Quality");
-        one.setAnswer(-1);
+        one.setAnswer(6);
 
     }
 
