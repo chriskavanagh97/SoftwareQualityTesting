@@ -84,6 +84,21 @@ public class TestJunit {
 
     @Test
     public void CreateQuestion() {
+        //Testing the correct questions are created added to the survey
+
+        Question one = new Question("Customer Service");
+        Question Two = new Question("Cleanliness");
+        //Collection to represent questions
+        ArrayList<Question> questions = new ArrayList<Question>();
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+
+        Survey newsurvey = controller.SurveyMultipleQuestions("MyQuestions", questions);
+
+        assertEquals("Customer Service", newsurvey.getQuestions().get(0).getQuestion());
+
+
 
     }
 
