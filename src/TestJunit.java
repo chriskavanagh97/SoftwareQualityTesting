@@ -98,8 +98,6 @@ public class TestJunit {
 
         assertEquals("Customer Service", newsurvey.getQuestions().get(0).getQuestion());
 
-
-
     }
 
         @Test(expected = IllegalArgumentException.class)
@@ -111,6 +109,24 @@ public class TestJunit {
             Question question2 = new Question("");
 
         }
+
+    @Test
+    public void questionAnswer()
+    {
+        //Here I am testing can a user input an answer
+        Question one = new Question("Quality");
+        controller.questionAnswer(one, 3);
+        assertEquals(1, one.getAnswer());
+
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void NegativeanswerValue()
+    {
+        Question one = new Question("Food Quality");
+        one.setAnswer(-1);
+
+    }
 
     //========================================================================================================
     //Tests for Survey Responses
@@ -131,6 +147,7 @@ public class TestJunit {
         assertTrue(surveyresponse instanceof SurveyResponse);
 
     }
+
 
 
 }
