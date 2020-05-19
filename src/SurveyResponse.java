@@ -29,8 +29,7 @@ public class SurveyResponse {
         return responses;
     }
 
-
-
-
-
+    public String getSurveyname() {
+        return surveyname;
+    }
 }

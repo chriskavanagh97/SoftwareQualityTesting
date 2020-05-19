@@ -49,7 +49,7 @@ public class TestJunit {
         questions.add(Two);
 
         Survey newsurvey = controller.SurveyMultipleQuestions("MyQuestions", questions);
-
+        assertEquals(2, newsurvey.getQuestions().size());
         assertTrue(newsurvey.getQuestions().contains(one));
     }
 
@@ -227,6 +227,122 @@ public class TestJunit {
 
     }
 
+
+    //Searching Tests
+    //==================================================================================================================
+
+
+    @Test
+    public void SurveyByName()
+    {
+
+        //Searching and getting a survey by Name
+        Survey surveyTwo = new Survey("Survey Quality");
+        Survey SurveyThree = new Survey("Survey Customer");
+
+
+        //Adding surveys to a list to ensure there a multiple surveys
+        surveys.add(survey);
+        surveys.add(surveyTwo);
+        surveys.add(SurveyThree);
+
+        Survey tester = controller.getSurveybyName(surveys, surveyTwo.getName());
+
+
+
+        assertEquals( "Survey Quality" , tester.getName());
+    }
+
+    @Test
+    public void SurveyResponseBySurveyName()
+    {
+        //Testing that a user can find a survey response based on a specific survey
+
+        //Ensuring that the answers have a value
+        one.setAnswer(3);
+        Two.setAnswer(5);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        String surveyname = survey.getName();
+        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
+
+        //Creating a 2nd survey response related to a different survey
+        //=============================================================================================================
+
+        Survey surveyTwo = new Survey("Survey Quality");
+        Question newqone = new Question("Customer Service");
+        Question newqtwo = new Question("Cleanliness");
+
+        newqone.setAnswer(4);
+        newqtwo.setAnswer(3);
+
+        //adding question to list
+        ArrayList<Question> questions2 = new ArrayList<Question>();
+        questions2.add(newqone);
+        questions2.add(newqtwo);
+        surveyname = surveyTwo.getName();
+        SurveyResponse surveyr2 =  controller.SurveyResponseCreation(surveyname, questions2);
+
+        //=============================================================================================================
+        //creating a third survey response related to the first survey
+        Question thirdqone = new Question("Customer Service");
+        Question thirdqtwo = new Question("Cleanliness");
+
+        thirdqone.setAnswer(5);
+        thirdqtwo.setAnswer(1);
+
+        //adding question to list
+        ArrayList<Question> questions3 = new ArrayList<Question>();
+        questions3.add(thirdqone);
+        questions3.add(thirdqtwo);
+
+        surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr3 =  controller.SurveyResponseCreation(surveyname, questions3);
+        //==============================================================================================================
+
+        //I now have three survey responses, two belonging related to Survey Test, and the other Survey Quality
+        ArrayList<SurveyResponse> responses = new ArrayList<>();
+        responses.add(surveyr);
+        responses.add(surveyr2);
+        responses.add(surveyr3);
+
+        //Ensuring the new list of survey responses has just 2 as I am looking for just survey responses related to Survey Test
+        assertEquals(2,controller.ReponseSurveyBySurveyName(responses,survey.getName()).size());
+
+        //Ensuring the survey responses in my new list are the correct survey responses
+        ArrayList<Integer> expected1 = new ArrayList<Integer>(Arrays.asList(3,5));
+        ArrayList<Integer> expected2 = new ArrayList<Integer>(Arrays.asList(5,1));
+
+        assertEquals(expected1 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(0).getIndividualResponses());
+        assertEquals(expected2 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(1).getIndividualResponses());
+
+    }
+
+    @Test
+    public void ReturningListofSurveys()
+    {
+        //Here I am testing if a user can create multiple surveys
+
+        Survey survey1 = new Survey("first Survey");
+        Survey survey2 = new Survey("Second Survey");
+        Survey survey3 = new Survey("Third Survey");
+
+        surveys.add(survey1);
+        surveys.add(survey2);
+        surveys.add(survey3);
+
+        ArrayList<String> expected = new ArrayList<>(Arrays.asList("first Survey","Second Survey","Third Survey"));
+
+
+        assertEquals(3, controller.MultipleSurveys(surveys).size());
+        assertEquals(expected, controller.MultipleSurveys(surveys));
+
+
+    }
 
 
 }

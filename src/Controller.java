@@ -32,10 +32,17 @@ String a ="quality";
     }
 
     //creating multiple surveys
-    public ArrayList<Survey> MultipleSurveys(ArrayList<Survey>surveys) {
+    public ArrayList<String> MultipleSurveys(ArrayList<Survey>surveys) {
 
+        ArrayList<String> surveynames = new ArrayList<>();
         //returning the list of surveys so I can test for size to ensure multiple surveys can be made
-        return surveys;
+        for(Survey survey: surveys)
+        {
+            surveynames.add(survey.getName());
+
+        }
+
+        return surveynames;
 
     }
 
@@ -70,6 +77,35 @@ String a ="quality";
         //Get the first survey response and the corresponding answers in the object
         return surveyResponse;
 
+    }
+
+    public Survey getSurveybyName(ArrayList<Survey> surveys , String name)
+    {
+        Survey surveyReturned = new Survey("Survey");
+        for(Survey survey: surveys)
+        {
+            if(survey.getName().equals(name))
+            {
+                surveyReturned= survey;
+            }
+
+        }
+        return surveyReturned;
+    }
+
+    public ArrayList<SurveyResponse> ReponseSurveyBySurveyName(ArrayList<SurveyResponse> responses , String name)
+    {
+
+        ArrayList<SurveyResponse> targetresponses = new ArrayList<>();
+        for(SurveyResponse CurrentsurveyResponse: responses)
+        {
+            if(CurrentsurveyResponse.getSurveyname().equals(name))
+            {
+                targetresponses.add(CurrentsurveyResponse);
+            }
+
+        }
+        return targetresponses;
     }
 
 }

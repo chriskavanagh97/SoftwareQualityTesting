@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +166,42 @@
       <option name="project" value="LOCAL" />
       <updated>1589892828030</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Test created for survey by name Fail">
+      <created>1589894867650</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1589894867650</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed functionality for test PASS">
+      <created>1589894894135</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589894894135</updated>
+    </task>
+    <task id="LOCAL-00016" summary="test created for survey response by survey Name. Fail">
+      <created>1589895946261</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589895946261</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Two additional tests added to ensure correct responses are retrieved FAIL">
+      <created>1589897201273</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1589897201273</updated>
+    </task>
+    <task id="LOCAL-00018" summary="All test PASS">
+      <created>1589898951858</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1589898951858</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,7 +209,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -193,6 +232,11 @@
     <MESSAGE value="Test for multiple surveyResponses PASS" />
     <MESSAGE value="Test created for getting individual responses PASS" />
     <MESSAGE value="Comments added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments added" />
+    <MESSAGE value="Test created for survey by name Fail" />
+    <MESSAGE value="Fixed functionality for test PASS" />
+    <MESSAGE value="test created for survey response by survey Name. Fail" />
+    <MESSAGE value="Two additional tests added to ensure correct responses are retrieved FAIL" />
+    <MESSAGE value="All test PASS" />
+    <option name="LAST_COMMIT_MESSAGE" value="All test PASS" />
   </component>
 </project>
