@@ -201,6 +201,40 @@ public class TestJunit {
 
     }
 
+    @Test
+    public void IndividualResponses()
+    {
+
+
+        // Survey response creation
+
+        Survey survey = new Survey("Survey Test");
+        Question one = new Question("Customer Service");
+        Question Two = new Question("Cleanliness");
+
+        //Ensuring that the answers have a value
+        one.setAnswer(3);
+        Two.setAnswer(5);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        String surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
+
+
+        ArrayList<SurveyResponse> responses = new ArrayList<>();
+
+        responses.add(surveyr);
+
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(3,5));
+
+        assertEquals(expected,  controller.surveyResponse(responses).get(0).getIndividualResponses());
+
+    }
+
 
 
 }

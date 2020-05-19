@@ -19,10 +19,10 @@ public class SurveyResponse {
         ArrayList<Integer> responses = new ArrayList<Integer>();
 
 
-        for(Question q : this.questions)
+        for(Question question : this.questions)
         {
-            int value = q.getAnswer();
-            responses.add(value);
+            int answer = question.getAnswer();
+            responses.add(answer);
         }
 
 
