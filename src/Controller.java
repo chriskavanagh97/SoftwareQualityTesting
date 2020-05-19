@@ -86,4 +86,15 @@ String a ="quality";
         return surveyReturned;
     }
 
+    public ArrayList<SurveyResponse> ReponseSurveyBySurveyName(ArrayList<SurveyResponse> responses , String name)
+    {
+
+        for(SurveyResponse CurrentsurveyResponse: responses)
+        {
+
+
+        }
+        return responses;
+    }
+
 }

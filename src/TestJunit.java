@@ -237,19 +237,61 @@ public class TestJunit {
     {
 
         //Searching and getting a survey by Name
-
         Survey surveyTwo = new Survey("Survey Quality");
         Survey SurveyThree = new Survey("Survey Customer");
 
 
-
+        //Adding surveys to a list to ensure there a multiple surveys
         surveys.add(survey);
         surveys.add(surveyTwo);
         surveys.add(SurveyThree);
 
         Survey tester = controller.getSurveybyName(surveys, surveyTwo.getName());
 
+
+
         assertEquals( "Survey Quality" , tester.getName());
+    }
+
+    @Test
+    public void SurveyResponseBySurveyName()
+    {
+        //Testing that a user can find a survey response based on a specific survey
+
+        //Ensuring that the answers have a value
+        one.setAnswer(3);
+        Two.setAnswer(5);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+
+
+        String surveyname = survey.getName();
+
+        //Creating a 2nd survey response related to a different survey
+        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
+
+        Survey surveyTwo = new Survey("Survey Quality");
+        one.setAnswer(1);
+        Two.setAnswer(3);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+
+        surveyname = surveyTwo.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr2 =  controller.SurveyResponseCreation(surveyname, questions);
+
+        ArrayList<SurveyResponse> responses = new ArrayList<>();
+        responses.add(surveyr);
+        responses.add(surveyr2);
+
+
+
+
     }
 
 
