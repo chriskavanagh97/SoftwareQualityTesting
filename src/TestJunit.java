@@ -205,9 +205,7 @@ public class TestJunit {
     public void IndividualResponses()
     {
 
-
         // Survey response creation
-
         Survey survey = new Survey("Survey Test");
         Question one = new Question("Customer Service");
         Question Two = new Question("Cleanliness");
@@ -225,12 +223,12 @@ public class TestJunit {
         SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
 
 
+        //Creating a list of survey responses to ensure I keep track of all
         ArrayList<SurveyResponse> responses = new ArrayList<>();
-
         responses.add(surveyr);
 
-        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(3,5));
 
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(3,5));
         assertEquals(expected,  controller.surveyResponse(responses).get(0).getIndividualResponses());
 
     }
