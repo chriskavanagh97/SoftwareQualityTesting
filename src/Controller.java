@@ -75,7 +75,14 @@ String a ="quality";
     public Survey getSurveybyName(ArrayList<Survey> surveys , String name)
     {
         Survey surveyReturned = new Survey("Survey");
+        for(Survey survey: surveys)
+        {
+            if(survey.getName().equals(name))
+            {
+                surveyReturned= survey;
+            }
 
+        }
         return surveyReturned;
     }
 
