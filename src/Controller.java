@@ -72,4 +72,11 @@ String a ="quality";
 
     }
 
+    public Survey getSurveybyName(ArrayList<Survey> surveys , String name)
+    {
+        Survey surveyReturned = new Survey("Survey");
+
+        return surveyReturned;
+    }
+
 }

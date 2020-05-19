@@ -228,6 +228,30 @@ public class TestJunit {
     }
 
 
+    //Searching Tests
+    //==================================================================================================================
+
+
+    @Test
+    public void SurveyByName()
+    {
+
+        //Searching and getting a survey by Name
+
+        Survey surveyTwo = new Survey("Survey Quality");
+        Survey SurveyThree = new Survey("Survey Customer");
+
+
+
+        surveys.add(survey);
+        surveys.add(surveyTwo);
+        surveys.add(SurveyThree);
+
+        Survey tester = controller.getSurveybyName(surveys, surveyTwo.getName());
+
+        assertEquals( "Survey Quality" , tester.getName());
+    }
+
 
 }
 
