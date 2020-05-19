@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SurveyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SurveyResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/SurveyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/SurveyResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -187,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589895946261</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Two additional tests added to ensure correct responses are retrieved FAIL">
+      <created>1589897201273</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1589897201273</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +228,7 @@
     <MESSAGE value="Test created for survey by name Fail" />
     <MESSAGE value="Fixed functionality for test PASS" />
     <MESSAGE value="test created for survey response by survey Name. Fail" />
-    <option name="LAST_COMMIT_MESSAGE" value="test created for survey response by survey Name. Fail" />
+    <MESSAGE value="Two additional tests added to ensure correct responses are retrieved FAIL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Two additional tests added to ensure correct responses are retrieved FAIL" />
   </component>
 </project>

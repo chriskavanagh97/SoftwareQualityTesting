@@ -272,28 +272,36 @@ public class TestJunit {
         //=============================================================================================================
 
         Survey surveyTwo = new Survey("Survey Quality");
-        one.setAnswer(1);
-        Two.setAnswer(3);
+        Question newqone = new Question("Customer Service");
+        Question newqtwo = new Question("Cleanliness");
+
+        newqone.setAnswer(4);
+        newqtwo.setAnswer(3);
 
         //adding question to list
-        questions.add(one);
-        questions.add(Two);
+        ArrayList<Question> questions2 = new ArrayList<Question>();
+        questions2.add(newqone);
+        questions2.add(newqtwo);
         surveyname = surveyTwo.getName();
-        SurveyResponse surveyr2 =  controller.SurveyResponseCreation(surveyname, questions);
+        SurveyResponse surveyr2 =  controller.SurveyResponseCreation(surveyname, questions2);
 
         //=============================================================================================================
         //creating a third survey response related to the first survey
-        one.setAnswer(5);
-        Two.setAnswer(1);
+        Question thirdqone = new Question("Customer Service");
+        Question thirdqtwo = new Question("Cleanliness");
+
+        thirdqone.setAnswer(5);
+        thirdqtwo.setAnswer(1);
 
         //adding question to list
-        questions.add(one);
-        questions.add(Two);
+        ArrayList<Question> questions3 = new ArrayList<Question>();
+        questions3.add(thirdqone);
+        questions3.add(thirdqtwo);
 
         surveyname = survey.getName();
 
         //Creating survey response
-        SurveyResponse surveyr3 =  controller.SurveyResponseCreation(surveyname, questions);
+        SurveyResponse surveyr3 =  controller.SurveyResponseCreation(surveyname, questions3);
         //==============================================================================================================
 
         //I now have three survey responses, two belonging related to Survey Test, and the other Survey Quality
@@ -311,12 +319,6 @@ public class TestJunit {
 
         assertEquals(expected1 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(0).getIndividualResponses());
         assertEquals(expected2 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(1).getIndividualResponses());
-
-
-
-
-
-
 
     }
 
