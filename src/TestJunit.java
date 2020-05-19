@@ -49,7 +49,7 @@ public class TestJunit {
         questions.add(Two);
 
         Survey newsurvey = controller.SurveyMultipleQuestions("MyQuestions", questions);
-
+        assertEquals(2, newsurvey.getQuestions().size());
         assertTrue(newsurvey.getQuestions().contains(one));
     }
 
@@ -319,6 +319,28 @@ public class TestJunit {
 
         assertEquals(expected1 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(0).getIndividualResponses());
         assertEquals(expected2 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(1).getIndividualResponses());
+
+    }
+
+    @Test
+    public void ReturningListofSurveys()
+    {
+        //Here I am testing if a user can create multiple surveys
+
+        Survey survey1 = new Survey("first Survey");
+        Survey survey2 = new Survey("Second Survey");
+        Survey survey3 = new Survey("Third Survey");
+
+        surveys.add(survey1);
+        surveys.add(survey2);
+        surveys.add(survey3);
+
+        ArrayList<String> expected = new ArrayList<>(Arrays.asList("first Survey","Second Survey","Third Survey"));
+
+
+        assertEquals(3, controller.MultipleSurveys(surveys).size());
+        assertEquals(expected, controller.MultipleSurveys(surveys));
+
 
     }
 

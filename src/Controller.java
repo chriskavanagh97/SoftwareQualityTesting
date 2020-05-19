@@ -32,10 +32,17 @@ String a ="quality";
     }
 
     //creating multiple surveys
-    public ArrayList<Survey> MultipleSurveys(ArrayList<Survey>surveys) {
+    public ArrayList<String> MultipleSurveys(ArrayList<Survey>surveys) {
 
+        ArrayList<String> surveynames = new ArrayList<>();
         //returning the list of surveys so I can test for size to ensure multiple surveys can be made
-        return surveys;
+        for(Survey survey: surveys)
+        {
+            surveynames.add(survey.getName());
+
+        }
+
+        return surveynames;
 
     }
 

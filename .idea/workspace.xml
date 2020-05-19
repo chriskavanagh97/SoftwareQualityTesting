@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/SurveyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/SurveyResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589897201273</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="All test PASS">
+      <created>1589898951858</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1589898951858</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,6 +236,7 @@
     <MESSAGE value="Fixed functionality for test PASS" />
     <MESSAGE value="test created for survey response by survey Name. Fail" />
     <MESSAGE value="Two additional tests added to ensure correct responses are retrieved FAIL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Two additional tests added to ensure correct responses are retrieved FAIL" />
+    <MESSAGE value="All test PASS" />
+    <option name="LAST_COMMIT_MESSAGE" value="All test PASS" />
   </component>
 </project>
