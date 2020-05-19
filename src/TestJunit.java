@@ -265,12 +265,11 @@ public class TestJunit {
         //adding question to list
         questions.add(one);
         questions.add(Two);
-
-
         String surveyname = survey.getName();
+        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
 
         //Creating a 2nd survey response related to a different survey
-        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
+        //=============================================================================================================
 
         Survey surveyTwo = new Survey("Survey Quality");
         one.setAnswer(1);
@@ -279,15 +278,42 @@ public class TestJunit {
         //adding question to list
         questions.add(one);
         questions.add(Two);
-
         surveyname = surveyTwo.getName();
-
-        //Creating survey response
         SurveyResponse surveyr2 =  controller.SurveyResponseCreation(surveyname, questions);
 
+        //=============================================================================================================
+        //creating a third survey response related to the first survey
+        one.setAnswer(5);
+        Two.setAnswer(1);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+
+        surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr3 =  controller.SurveyResponseCreation(surveyname, questions);
+        //==============================================================================================================
+
+        //I now have three survey responses, two belonging related to Survey Test, and the other Survey Quality
         ArrayList<SurveyResponse> responses = new ArrayList<>();
         responses.add(surveyr);
         responses.add(surveyr2);
+        responses.add(surveyr3);
+
+        //Ensuring the new list of survey responses has just 2 as I am looking for just survey responses related to Survey Test
+        assertEquals(2,controller.ReponseSurveyBySurveyName(responses,survey.getName()).size());
+
+        //Ensuring the survey responses in my new list are the correct survey responses
+        ArrayList<Integer> expected1 = new ArrayList<Integer>(Arrays.asList(3,5));
+        ArrayList<Integer> expected2 = new ArrayList<Integer>(Arrays.asList(5,1));
+
+        assertEquals(expected1 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(0).getIndividualResponses());
+        assertEquals(expected2 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(1).getIndividualResponses());
+
+
+
 
 
 

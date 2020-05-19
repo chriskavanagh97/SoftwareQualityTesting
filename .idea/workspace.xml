@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SurveyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SurveyResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589894894135</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="test created for survey response by survey Name. Fail">
+      <created>1589895946261</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589895946261</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,6 +220,7 @@
     <MESSAGE value="Comments added" />
     <MESSAGE value="Test created for survey by name Fail" />
     <MESSAGE value="Fixed functionality for test PASS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed functionality for test PASS" />
+    <MESSAGE value="test created for survey response by survey Name. Fail" />
+    <option name="LAST_COMMIT_MESSAGE" value="test created for survey response by survey Name. Fail" />
   </component>
 </project>

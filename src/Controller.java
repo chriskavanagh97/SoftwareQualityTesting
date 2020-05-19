@@ -89,12 +89,16 @@ String a ="quality";
     public ArrayList<SurveyResponse> ReponseSurveyBySurveyName(ArrayList<SurveyResponse> responses , String name)
     {
 
+        ArrayList<SurveyResponse> targetresponses = new ArrayList<>();
         for(SurveyResponse CurrentsurveyResponse: responses)
         {
-
+            if(CurrentsurveyResponse.getSurveyname().equals(name))
+            {
+                targetresponses.add(CurrentsurveyResponse);
+            }
 
         }
-        return responses;
+        return targetresponses;
     }
 
 }
