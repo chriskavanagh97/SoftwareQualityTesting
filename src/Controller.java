@@ -64,4 +64,12 @@ String a ="quality";
 
 
     }
+
+    public ArrayList<SurveyResponse> surveyResponse(ArrayList<SurveyResponse> surveyResponse)
+    {
+        //Get the first survey response and the corresponding answers in the object
+        return surveyResponse;
+
+    }
+
 }

@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
@@ -143,8 +144,60 @@ public class TestJunit {
         questions.add(Two);
         String surveyname = survey.getName();
 
-        SurveyResponse surveyresponse = controller.SurveyResponseCreation("surveyname", questions);
+        SurveyResponse surveyresponse = controller.SurveyResponseCreation(surveyname, questions);
         assertTrue(surveyresponse instanceof SurveyResponse);
+
+    }
+
+    @Test
+    public void CheckingforMultipleSurveyResponses()
+    {
+        //First Survey response creation
+        //============================================================================================
+        Survey survey = new Survey("Survey Test");
+        Question one = new Question("Customer Service");
+        Question Two = new Question("Cleanliness");
+
+        //Ensuring that the answers have a value
+        one.setAnswer(3);
+        Two.setAnswer(5);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        String surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
+        //==============================================================================================
+
+        //Second Survey response creation
+        //============================================================================================
+        Survey survey2 = new Survey("Survey Quality");
+        Question service = new Question("Overall Service");
+        Question experience = new Question("Experience");
+
+        //Ensuring that the answers have a value
+        one.setAnswer(3);
+        Two.setAnswer(5);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr2 =  controller.SurveyResponseCreation(surveyname, questions);
+        //==============================================================================================
+
+        ArrayList<SurveyResponse> responses = new ArrayList<>();
+
+        responses.add(surveyr);
+        responses.add(surveyr2);
+
+
+
+        assertEquals(2,  controller.surveyResponse(responses).size());
 
     }
 

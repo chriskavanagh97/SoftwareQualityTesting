@@ -13,7 +13,7 @@ public class SurveyResponse {
     }
 
     //here I can create a list of answers based on questions forming reponses
-    public ArrayList<Integer> getResponses()
+    public ArrayList<Integer> getIndividualResponses()
     {
         //represents the responses, as responses will be a number
         ArrayList<Integer> responses = new ArrayList<Integer>();
@@ -28,10 +28,6 @@ public class SurveyResponse {
 
         return responses;
     }
-
-
-
-
 
 
 
