@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
@@ -12,6 +13,10 @@ public class TestJunit {
 
     Controller controller = new Controller("first survey");
     ArrayList<Question> questions = new ArrayList<Question>();
+
+    Survey survey = new Survey("Survey Test");
+    Question one = new Question("Customer Service");
+    Question Two = new Question("Cleanliness");
 
     @Test
     public void CreatingSurvey() {
@@ -36,8 +41,7 @@ public class TestJunit {
     public void addMultipleQuestions()
     {
         //Here I am testing that a user can create a survey with multiple questions
-        Question one = new Question("Customer Service");
-        Question Two = new Question("Cleanliness");
+
         //Collection to represent questions
 
         //adding question to list
@@ -87,8 +91,7 @@ public class TestJunit {
     public void CreateQuestion() {
         //Testing the correct questions are created added to the survey
 
-        Question one = new Question("Customer Service");
-        Question Two = new Question("Cleanliness");
+
         //Collection to represent questions
         //adding question to list
         questions.add(one);
@@ -97,8 +100,6 @@ public class TestJunit {
         Survey newsurvey = controller.SurveyMultipleQuestions("MyQuestions", questions);
 
         assertEquals("Customer Service", newsurvey.getQuestions().get(0).getQuestion());
-
-
 
     }
 
@@ -110,10 +111,125 @@ public class TestJunit {
             Question question = new Question("");
             Question question2 = new Question("");
 
-
-
         }
+
+    @Test
+    public void questionAnswer()
+    {
+        //Here I am testing can a user input an answer
+
+        controller.questionAnswer(one, 3);
+        assertEquals(3, one.getAnswer());
+
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void NegativeanswerValue()
+    {
+
+        one.setAnswer(6);
+
+    }
+
+    //========================================================================================================
+    //Tests for Survey Responses
+    //========================================================================================================
+
+    @Test
+    public void surveyResponseCreationTest()
+    {
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        String surveyname = survey.getName();
+
+        SurveyResponse surveyresponse = controller.SurveyResponseCreation(surveyname, questions);
+        assertTrue(surveyresponse instanceof SurveyResponse);
+
+    }
+
+    @Test
+    public void CheckingforMultipleSurveyResponses()
+    {
+        //First Survey response creation
+        //============================================================================================
+
+
+        //Ensuring that the answers have a value
+        one.setAnswer(3);
+        Two.setAnswer(5);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        String surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
+        //==============================================================================================
+
+        //Second Survey response creation
+        //============================================================================================
+        Survey survey2 = new Survey("Survey Quality");
+        Question service = new Question("Overall Service");
+        Question experience = new Question("Experience");
+
+        //Ensuring that the answers have a value
+        one.setAnswer(3);
+        Two.setAnswer(5);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr2 =  controller.SurveyResponseCreation(surveyname, questions);
+        //==============================================================================================
+
+        ArrayList<SurveyResponse> responses = new ArrayList<>();
+
+        responses.add(surveyr);
+        responses.add(surveyr2);
+
+
+
+        assertEquals(2,  controller.surveyResponse(responses).size());
+
+    }
+
+    @Test
+    public void IndividualResponses()
+    {
+
+        // Survey response creation
+        //Ensuring that the answers have a value
+        one.setAnswer(3);
+        Two.setAnswer(5);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        String surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
+
+
+        //Creating a list of survey responses to ensure I keep track of all
+        ArrayList<SurveyResponse> responses = new ArrayList<>();
+        responses.add(surveyr);
+
+
+        ArrayList<Integer> expected = new ArrayList<>(Arrays.asList(3,5));
+        assertEquals(expected,  controller.surveyResponse(responses).get(0).getIndividualResponses());
+
+    }
+
+
+
+}
 
 
 

@@ -47,4 +47,29 @@ String a ="quality";
 
         return createSurvey;
     }
+
+    public Question questionAnswer(Question questionAnswer, int answer)
+    {
+        //Setting the value of the answer
+        questionAnswer.setAnswer(answer);
+        return questionAnswer;
+    }
+
+    public SurveyResponse SurveyResponseCreation(String surveyname, ArrayList<Question> questions  )
+    {
+        //creating a new survey object
+        SurveyResponse firstSurveyResponse = new SurveyResponse(surveyname,questions);
+
+        return firstSurveyResponse;
+
+
+    }
+
+    public ArrayList<SurveyResponse> surveyResponse(ArrayList<SurveyResponse> surveyResponse)
+    {
+        //Get the first survey response and the corresponding answers in the object
+        return surveyResponse;
+
+    }
+
 }

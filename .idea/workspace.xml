@@ -115,7 +115,56 @@
       <option name="project" value="LOCAL" />
       <updated>1589721601975</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Changes made as requested">
+      <created>1589722035160</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589722035160</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Test for Survey Response and functionality added PASS">
+      <created>1589736473631</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589736473631</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added in two tests both FAIL : code needs to be refactored to pass">
+      <created>1589738476131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589738476131</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Code changed and test now PASS">
+      <created>1589738627941</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589738627941</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Test for multiple surveyResponses PASS">
+      <created>1589890626858</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589890626858</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Test created for getting individual responses PASS">
+      <created>1589891243429</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589891243429</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Comments added">
+      <created>1589892828030</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589892828030</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +186,13 @@
     <MESSAGE value="Added in a test, to test blank questions. Test Failed" />
     <MESSAGE value="Added functionality test now a PASS" />
     <MESSAGE value="Test added to ensure questions are created correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test added to ensure questions are created correctly" />
+    <MESSAGE value="Changes made as requested" />
+    <MESSAGE value="Test for Survey Response and functionality added PASS" />
+    <MESSAGE value="Added in two tests both FAIL : code needs to be refactored to pass" />
+    <MESSAGE value="Code changed and test now PASS" />
+    <MESSAGE value="Test for multiple surveyResponses PASS" />
+    <MESSAGE value="Test created for getting individual responses PASS" />
+    <MESSAGE value="Comments added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments added" />
   </component>
 </project>
