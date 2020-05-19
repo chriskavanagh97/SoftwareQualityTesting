@@ -14,6 +14,10 @@ public class TestJunit {
     Controller controller = new Controller("first survey");
     ArrayList<Question> questions = new ArrayList<Question>();
 
+    Survey survey = new Survey("Survey Test");
+    Question one = new Question("Customer Service");
+    Question Two = new Question("Cleanliness");
+
     @Test
     public void CreatingSurvey() {
 
@@ -37,8 +41,7 @@ public class TestJunit {
     public void addMultipleQuestions()
     {
         //Here I am testing that a user can create a survey with multiple questions
-        Question one = new Question("Customer Service");
-        Question Two = new Question("Cleanliness");
+
         //Collection to represent questions
 
         //adding question to list
@@ -88,8 +91,7 @@ public class TestJunit {
     public void CreateQuestion() {
         //Testing the correct questions are created added to the survey
 
-        Question one = new Question("Customer Service");
-        Question Two = new Question("Cleanliness");
+
         //Collection to represent questions
         //adding question to list
         questions.add(one);
@@ -115,7 +117,7 @@ public class TestJunit {
     public void questionAnswer()
     {
         //Here I am testing can a user input an answer
-        Question one = new Question("Quality");
+
         controller.questionAnswer(one, 3);
         assertEquals(3, one.getAnswer());
 
@@ -124,7 +126,7 @@ public class TestJunit {
     @Test(expected = IllegalArgumentException.class)
     public void NegativeanswerValue()
     {
-        Question one = new Question("Food Quality");
+
         one.setAnswer(6);
 
     }
@@ -136,9 +138,7 @@ public class TestJunit {
     @Test
     public void surveyResponseCreationTest()
     {
-        Survey survey = new Survey("Survey Test");
-        Question one = new Question("Customer Service");
-        Question Two = new Question("Cleanliness");
+
         //adding question to list
         questions.add(one);
         questions.add(Two);
@@ -154,9 +154,7 @@ public class TestJunit {
     {
         //First Survey response creation
         //============================================================================================
-        Survey survey = new Survey("Survey Test");
-        Question one = new Question("Customer Service");
-        Question Two = new Question("Cleanliness");
+
 
         //Ensuring that the answers have a value
         one.setAnswer(3);
@@ -206,10 +204,6 @@ public class TestJunit {
     {
 
         // Survey response creation
-        Survey survey = new Survey("Survey Test");
-        Question one = new Question("Customer Service");
-        Question Two = new Question("Cleanliness");
-
         //Ensuring that the answers have a value
         one.setAnswer(3);
         Two.setAnswer(5);

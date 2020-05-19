@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589891243429</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Comments added">
+      <created>1589892828030</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589892828030</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +192,7 @@
     <MESSAGE value="Code changed and test now PASS" />
     <MESSAGE value="Test for multiple surveyResponses PASS" />
     <MESSAGE value="Test created for getting individual responses PASS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test created for getting individual responses PASS" />
+    <MESSAGE value="Comments added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments added" />
   </component>
 </project>
