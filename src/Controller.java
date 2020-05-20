@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Controller {
 String a ="quality";
@@ -106,6 +107,32 @@ String a ="quality";
 
         }
         return targetresponses;
+    }
+
+    public double SurveyAverage(ArrayList<SurveyResponse>responses){
+
+        double total = 0;
+        int size = 0;
+
+        for(SurveyResponse reponse : responses)
+        {
+
+            for(int i : reponse.getIndividualResponses()){
+
+                total += i;
+                size += 1;
+
+            }
+        }
+        return total/size;
+    }
+
+    public double QuestionAverage(ArrayList<SurveyResponse>responses){
+
+        double total = 0;
+        int size = 0;
+
+        return total/size;
     }
 
 }

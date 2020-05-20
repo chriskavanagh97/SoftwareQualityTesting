@@ -345,6 +345,92 @@ public class TestJunit {
     }
 
 
+    @Test
+    public void getAverageForSurveyTest(){
+
+        AutomaticResponseCreation();
+
+        assertEquals(2.5, controller.SurveyAverage(AutomaticResponseCreation()), 1e-3);
+
+    }
+
+    @Test
+    public void getAverageForQuestion(){
+
+        AutomaticResponseCreation();
+
+        assertEquals(2.5, controller.SurveyAverage(AutomaticResponseCreation()), 1e-3);
+
+    }
+
+    public ArrayList<SurveyResponse> AutomaticResponseCreation()
+    {
+
+        //Ensuring that the answers have a value
+        ArrayList<Question> questions = new ArrayList<Question>();
+
+        Survey survey = new Survey("Survey Test");
+        Question one = new Question("Customer Service");
+        Question Two = new Question("Cleanliness");
+        one.setAnswer(1);
+        Two.setAnswer(4);
+
+        //adding question to list
+        questions.add(one);
+        questions.add(Two);
+        String surveyname = survey.getName();
+        SurveyResponse surveyr =  controller.SurveyResponseCreation(surveyname, questions);
+
+        //Creating a 2nd survey response related to a different survey
+        //=============================================================================================================
+
+        Survey surveyTwo = new Survey("Survey Quality");
+        Question newqone = new Question("Customer Service");
+        Question newqtwo = new Question("Cleanliness");
+
+        newqone.setAnswer(4);
+        newqtwo.setAnswer(3);
+
+        //adding question to list
+        ArrayList<Question> questions2 = new ArrayList<Question>();
+        questions2.add(newqone);
+        questions2.add(newqtwo);
+        surveyname = surveyTwo.getName();
+        SurveyResponse surveyr2 =  controller.SurveyResponseCreation(surveyname, questions2);
+
+        //=============================================================================================================
+        //creating a third survey response related to the first survey
+        Question thirdqone = new Question("Customer Service");
+        Question thirdqtwo = new Question("Cleanliness");
+
+        thirdqone.setAnswer(5);
+        thirdqtwo.setAnswer(1);
+
+        //adding question to list
+        ArrayList<Question> questions3 = new ArrayList<Question>();
+        questions3.add(thirdqone);
+        questions3.add(thirdqtwo);
+
+        surveyname = survey.getName();
+
+        //Creating survey response
+        SurveyResponse surveyr3 =  controller.SurveyResponseCreation(surveyname, questions3);
+        //==============================================================================================================
+
+        //I now have three survey responses, two belonging related to Survey Test, and the other Survey Quality
+        ArrayList<SurveyResponse> responses = new ArrayList<>();
+        responses.add(surveyr);
+        responses.add(surveyr2);
+
+        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+        Nameresponses = controller.ReponseSurveyBySurveyName(responses, survey.getName());
+
+        return Nameresponses;
+    }
+
+
+
+
 }
 
 
