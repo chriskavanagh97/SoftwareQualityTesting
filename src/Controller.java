@@ -127,22 +127,33 @@ String a ="quality";
         return total/size;
     }
 
-    public double QuestionAverage(ArrayList<SurveyResponse>responses){
+    public double getSurveySD(ArrayList<SurveyResponse>responses){
 
+        ArrayList<Integer> nums = new ArrayList<>();
         double total = 0;
-        int size = 0;
+        double standardDeviation = 0.0;
 
-        for(SurveyResponse reponse : responses)
-        {
 
-            for(int i : reponse.getIndividualResponses()){
 
-                total += i;
-                size += 1;
-
-            }
-        }
-        return total/size;
+        return standardDeviation;
     }
+
+    public int getMinSurvey(ArrayList<SurveyResponse>responses){
+
+        int min = 0;
+
+
+        return min;
+
+    }
+
+    public int getMaxSurvey(ArrayList<SurveyResponse>responses){
+
+        int max = 0;
+
+
+        return max;
+    }
+
 
 }

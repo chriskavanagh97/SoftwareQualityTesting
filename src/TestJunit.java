@@ -355,13 +355,32 @@ public class TestJunit {
     }
 
     @Test
-    public void getAverageForQuestion(){
+    public void getSurveySD(){
 
         AutomaticResponseCreation();
 
-        assertEquals(2.5, controller.SurveyAverage(AutomaticResponseCreation()), 1e-3);
+        assertEquals(2.5, controller.getSurveySD(AutomaticResponseCreation()), 1e-3);
 
     }
+
+    @Test
+    public void getMaxSurvey(){
+
+        AutomaticResponseCreation();
+
+        assertEquals(2.5, controller.getMaxSurvey(AutomaticResponseCreation()), 1e-3);
+
+    }
+
+    @Test
+    public void getMinSurvey(){
+
+        AutomaticResponseCreation();
+
+        assertEquals(2.5, controller.getMinSurvey(AutomaticResponseCreation()), 1e-3);
+
+    }
+
 
     public ArrayList<SurveyResponse> AutomaticResponseCreation()
     {
