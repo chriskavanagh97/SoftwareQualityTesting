@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,5 +291,8 @@
     <MESSAGE value="Added a test to get Survey Response by Question Name PASS" />
     <MESSAGE value="Question Calculations added PASS" />
     <option name="LAST_COMMIT_MESSAGE" value="Question Calculations added PASS" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareQualityTesting$TestJunit.ic" NAME="TestJunit Coverage Results" MODIFIED="1589980624352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
