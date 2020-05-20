@@ -40,3 +40,11 @@ Code duplication should be checked, if there is code written for the same porpos
 #### 6. **Is there documentation**
 
 Do comments exist that describe the intent of the code? Are all functions commented. If there is any incomplete code is this flagged with a suitable marker such as "TODO" 
+
+**Example of how my review checklist is applied:**
+
+ [Pull Request and Review Checklist](https://github.com/chriskavanagh97/SoftwareQualityTesting/pull/3)
+
+Each member of the team will review code by checking if it passes the 6 stages. If the code doesn't pass a stage the member will be required to say why it doesn't pass this test and say how it should be changed.
+
+The developer will then be required to make these changes, and create a new pull request with new changes 
