@@ -117,4 +117,7 @@
     <MESSAGE value="Velocity Calculation" />
     <option name="LAST_COMMIT_MESSAGE" value="Velocity Calculation" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareQualityTesting$TestJunit.ic" NAME="TestJunit Coverage Results" MODIFIED="1589984285128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
 </project>
