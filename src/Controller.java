@@ -110,6 +110,30 @@ String a ="quality";
         return targetresponses;
     }
 
+    public ArrayList<Integer> SurveyResponseByQuestion(ArrayList<SurveyResponse> responses, String questionname )
+    {
+
+        ArrayList<Integer> targetresponses = new ArrayList<>();
+
+        for(SurveyResponse CurrentsurveyResponse: responses)
+        {
+            for(Question question : CurrentsurveyResponse.getQuestions()){
+
+
+
+                    if(question.getQuestion().equals(questionname))
+                    {
+                        targetresponses.add(question.getAnswer());
+
+                    }
+            }
+
+        }
+        return targetresponses;
+    }
+
+
+
     public double SurveyAverage(ArrayList<SurveyResponse>responses){
 
         double total = 0;
