@@ -43,6 +43,15 @@ This branch is where any near final changes are located before making it into th
 
 **_Develop_Calculate:_** This branch was used to create calculations for my project such as average and standard deviation of surveys
 
+
+An Exmaple of my gitflow process is the merge of Develop Survey into my Dvelop branch.
+
+I then create a new branch Develop Question and merge this once finished into my Develop branch.
+
+[Survey Merge](https://github.com/chriskavanagh97/SoftwareQualityTesting/commit/8cc9929c810f2a9bdd6d52acaa59d512d9442689)
+
+[Question Megre](https://github.com/chriskavanagh97/SoftwareQualityTesting/commit/1834a04736a338cf4656f98f12555f42b580091b)
+
 # Sprint Backlog
 
 The sprint backlog will contain all tasks associated with the software component with associate values based on estimation
