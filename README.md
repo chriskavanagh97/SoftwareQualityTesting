@@ -14,3 +14,16 @@ In simple terms, it is a technique to ensure that your tests are testing your co
 
 IntelliJ IDEA has a code coverage runner built in. This allows me to use a code coverage tool without the need to download external coverage tools such as EMMA or JaCoCo.
 
+To run the code coverage tool you simply just have to click a single button:
+
+![](https://github.com/chriskavanagh97/SoftwareQualityTesting/blob/TestCovageTool/src/Images/CodeCoverageButton.png)
+
+Once the code coverage tool has been run, I am given a repor on my code showing the % covered in each of my classes and the overall code coverage.
+
+![](https://github.com/chriskavanagh97/SoftwareQualityTesting/blob/TestCovageTool/src/Images/CodeCoverageReport.png)
+
+As you can clearly see I have a reasonably high 95%. This is naturally from continuous pull requests and checklists to ensure my code is written to a good standard. although my code coverage can still be improved. In Survey i have 62% and question 80%. With this I should go to both classes and ensure all code is being used.
+
+![](https://github.com/chriskavanagh97/SoftwareQualityTesting/blob/TestCovageTool/src/Images/CodeCoverageReport2.png)
+
+As you can see the code coverage has now increased to 97%. Although not a lot it does portray how it should be and can be used and would be very beneficial in larger projects where the original code coverage may not be as high.
