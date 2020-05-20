@@ -178,3 +178,4 @@ As you can clearly see I have a reasonably high 95%. This is naturally from cont
 ![](https://github.com/chriskavanagh97/SoftwareQualityTesting/blob/TestCovageTool/src/Images/CodeCoverageReport2.png)
 
 As you can see the code coverage has now increased to 97%. Although not a lot it does portray how it should be and can be used and would be very beneficial in larger projects where the original code coverage may not be as high
+ 
