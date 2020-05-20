@@ -132,6 +132,16 @@ String a ="quality";
         double total = 0;
         int size = 0;
 
+        for(SurveyResponse reponse : responses)
+        {
+
+            for(int i : reponse.getIndividualResponses()){
+
+                total += i;
+                size += 1;
+
+            }
+        }
         return total/size;
     }
 
