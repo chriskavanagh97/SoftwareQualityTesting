@@ -226,5 +226,92 @@ String a ="quality";
         return maxnum;
     }
 
+    public double getQuestionAverage(ArrayList<Integer>responses){
+
+        double total = 0;
+        int size = 0;
+
+
+            for(int i : responses){
+
+                total += i;
+                size += 1;
+
+            }
+
+        return total/size;
+    }
+
+    public double getQuestionSD(ArrayList<Integer>responses){
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        double total = 0;
+        int size = 0;
+
+        double standardDeviation = 0.0;
+
+
+
+            for(int i : responses){
+
+                total += i;
+                size += 1;
+                responselist.add(i);
+            }
+
+
+
+        double mean = total/size;
+
+        for(double num: responselist) {
+            standardDeviation += Math.pow(num - mean, 2);
+        }
+
+        return Math.sqrt(standardDeviation/size);
+    }
+
+    public int getMinQuestion(ArrayList<Integer>responses){
+
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        int minnum = 0;
+
+
+
+
+            for(int i : responses){
+
+                responselist.add(i);
+            }
+
+        minnum = Collections.min(responselist);
+
+
+
+        return minnum;
+
+    }
+
+    public int getMaxQuestion(ArrayList<Integer>responses){
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        int maxnum = 0;
+
+
+
+
+            for(int i : responses){
+
+                responselist.add(i);
+            }
+
+        maxnum = Collections.max(responselist);
+
+        return maxnum;
+    }
+
 
 }

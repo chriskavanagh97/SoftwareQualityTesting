@@ -309,9 +309,6 @@ public class TestJunit {
 
         assertEquals(expected, controller.SurveyResponseByQuestion(AutomaticResponseCreation(),questionname));
 
-
-
-
     }
 
 
@@ -354,6 +351,56 @@ public class TestJunit {
 
     @Test
     public void getMinSurvey(){
+
+        AutomaticResponseCreation();
+
+        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+
+        assertEquals(1, controller.getMinSurvey(Nameresponses), 1e-1);
+
+
+    }
+    @Test
+    public void getAverageForQuestion(){
+
+        AutomaticResponseCreation();
+        ArrayList<Integer>Nameresponses = new ArrayList<>();
+        String questionname = "Customer Service";
+
+        Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
+
+
+    }
+
+    @Test
+    public void getQuestionSD(){
+
+        AutomaticResponseCreation();
+
+        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+
+        assertEquals(1.7853, controller.getSurveySD(Nameresponses), 1e-4);
+
+
+    }
+
+    @Test
+    public void getMaxQuestion(){
+
+        AutomaticResponseCreation();
+
+        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+
+        assertEquals(5, controller.getMaxSurvey(Nameresponses), 1e-1);
+
+
+    }
+
+    @Test
+    public void getMinQuestion(){
 
         AutomaticResponseCreation();
 

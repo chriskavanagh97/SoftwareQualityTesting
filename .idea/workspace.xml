@@ -4,10 +4,8 @@
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/SurveyResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/SurveyResponse.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SurveyResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SurveyResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589972895633</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Added a test to get Survey Response by Question Name PASS">
+      <created>1589977270322</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1589977270322</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -280,6 +285,7 @@
     <MESSAGE value="3 more tests added for Survey calculations all FAIL" />
     <MESSAGE value="Standard Deviation Test PASS" />
     <MESSAGE value="Max and Min calculations now PASS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Max and Min calculations now PASS" />
+    <MESSAGE value="Added a test to get Survey Response by Question Name PASS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a test to get Survey Response by Question Name PASS" />
   </component>
 </project>
