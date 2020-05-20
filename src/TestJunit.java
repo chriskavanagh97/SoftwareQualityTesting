@@ -368,7 +368,7 @@ public class TestJunit {
 
         AutomaticResponseCreation();
 
-        assertEquals(2.5, controller.getMaxSurvey(AutomaticResponseCreation()), 1e-3);
+        assertEquals(5, controller.getMaxSurvey(AutomaticResponseCreation()), 1e-1);
 
     }
 
@@ -377,7 +377,7 @@ public class TestJunit {
 
         AutomaticResponseCreation();
 
-        assertEquals(2.5, controller.getMinSurvey(AutomaticResponseCreation()), 1e-3);
+        assertEquals(1, controller.getMinSurvey(AutomaticResponseCreation()), 1e-3);
 
     }
 

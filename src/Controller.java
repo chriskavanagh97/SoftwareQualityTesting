@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Controller {
 String a ="quality";
@@ -159,19 +160,46 @@ String a ="quality";
 
     public int getMinSurvey(ArrayList<SurveyResponse>responses){
 
-        int min = 0;
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        int minnum = 0;
 
 
-        return min;
+
+        for(SurveyResponse surveyResponse : responses)
+        {
+            for(int i : surveyResponse.getIndividualResponses()){
+
+                responselist.add(i);
+            }
+        }
+        minnum = Collections.min(responselist);
+
+
+
+        return minnum;
 
     }
 
     public int getMaxSurvey(ArrayList<SurveyResponse>responses){
 
-        int max = 0;
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        int maxnum = 0;
 
 
-        return max;
+
+        for(SurveyResponse surveyResponse : responses)
+        {
+            for(int i : surveyResponse.getIndividualResponses()){
+
+                responselist.add(i);
+            }
+        }
+        maxnum = Collections.max(responselist);
+
+        return maxnum;
     }
 
 
