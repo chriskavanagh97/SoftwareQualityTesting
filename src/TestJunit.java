@@ -315,8 +315,13 @@ public class TestJunit {
     @Test
     public void getAverageForSurveyTest(){
 
+        //Testing for the average value of a survey
+
+        //This returns three survey responses
         AutomaticResponseCreation();
         ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+
+        //This filters those survey responses into values based on a specific survey
         Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
 
         assertEquals(2.75, controller.SurveyAverage(Nameresponses), 1e-3);
@@ -326,9 +331,14 @@ public class TestJunit {
     @Test
     public void getSurveySD(){
 
+        //Testing for the standard deviation of a survey
+
+        //This returns three survey responses
         AutomaticResponseCreation();
 
         ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+
+        //This filters those survey responses into values based on a specific survey
         Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
 
         assertEquals(1.7853, controller.getSurveySD(Nameresponses), 1e-4);
@@ -339,9 +349,14 @@ public class TestJunit {
     @Test
     public void getMaxSurvey(){
 
+        //Testing for the maximum value in a survey
+
+        //This returns three survey responses
         AutomaticResponseCreation();
 
         ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+
+        //This filters those survey responses into values based on a specific survey
         Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
 
         assertEquals(5, controller.getMaxSurvey(Nameresponses), 1e-1);
@@ -352,9 +367,14 @@ public class TestJunit {
     @Test
     public void getMinSurvey(){
 
+        //Testing for the minimum value in a survey
+
+        //This returns three survey responses
         AutomaticResponseCreation();
 
         ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+
+        //This filters those survey responses into values based on a specific survey
         Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
 
         assertEquals(1, controller.getMinSurvey(Nameresponses), 1e-1);
@@ -364,24 +384,38 @@ public class TestJunit {
     @Test
     public void getAverageForQuestion(){
 
+        //Testing the average score for a specific question
+
+        //This supplies the three survey responses with 6 questions
         AutomaticResponseCreation();
         ArrayList<Integer>Nameresponses = new ArrayList<>();
         String questionname = "Customer Service";
 
+        //This filters these 6 questions down to just 2 with the same name
         Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
 
+        //This ensures I am getting the correct average
+        assertEquals(3, controller.getQuestionAverage(Nameresponses), 1e-1);
 
     }
 
     @Test
     public void getQuestionSD(){
 
+
+        //Testing the standard deviation for a specific question
+
+        //This supplies the three survey responses with 6 questions
         AutomaticResponseCreation();
 
-        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
-        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+        ArrayList<Integer>Nameresponses = new ArrayList<>();
+        String questionname = "Customer Service";
 
-        assertEquals(1.7853, controller.getSurveySD(Nameresponses), 1e-4);
+        //This filters these 6 questions down to just 2 with the same name
+
+        Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
+
+        assertEquals(2, controller.getQuestionSD(Nameresponses), 1e-1);
 
 
     }
@@ -389,12 +423,17 @@ public class TestJunit {
     @Test
     public void getMaxQuestion(){
 
+        //Testing the standard deviation for a specific question
+
+        //This supplies the three survey responses with 6 questions
         AutomaticResponseCreation();
 
-        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
-        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+        ArrayList<Integer>Nameresponses = new ArrayList<>();
+        String questionname = "Customer Service";
 
-        assertEquals(5, controller.getMaxSurvey(Nameresponses), 1e-1);
+        Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
+
+        assertEquals(5, controller.getMaxQuestion(Nameresponses), 1e-1);
 
 
     }
@@ -402,12 +441,17 @@ public class TestJunit {
     @Test
     public void getMinQuestion(){
 
+        //Testing the standard deviation for a specific question
+
+        //This supplies the three survey responses with 6 questions
         AutomaticResponseCreation();
 
-        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
-        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+        ArrayList<Integer>Nameresponses = new ArrayList<>();
+        String questionname = "Customer Service";
 
-        assertEquals(1, controller.getMinSurvey(Nameresponses), 1e-1);
+        Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
+
+        assertEquals(1, controller.getMinQuestion(Nameresponses), 1e-1);
 
 
     }

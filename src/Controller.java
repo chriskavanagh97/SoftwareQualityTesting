@@ -301,8 +301,6 @@ String a ="quality";
         int maxnum = 0;
 
 
-
-
             for(int i : responses){
 
                 responselist.add(i);

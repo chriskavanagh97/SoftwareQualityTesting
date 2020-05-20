@@ -244,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589977270322</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Question Calculations added PASS">
+      <created>1589978351644</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1589978351644</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,7 +268,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="branch created" />
     <MESSAGE value="Pulled from develop class" />
     <MESSAGE value="fixing format of comments" />
     <MESSAGE value="Added Develop question branch" />
@@ -286,6 +292,7 @@
     <MESSAGE value="Standard Deviation Test PASS" />
     <MESSAGE value="Max and Min calculations now PASS" />
     <MESSAGE value="Added a test to get Survey Response by Question Name PASS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a test to get Survey Response by Question Name PASS" />
+    <MESSAGE value="Question Calculations added PASS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question Calculations added PASS" />
   </component>
 </project>
