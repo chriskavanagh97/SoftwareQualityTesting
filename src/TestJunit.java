@@ -259,8 +259,215 @@ public class TestJunit {
         //Testing that a user can find a survey response based on a specific survey
 
         //Ensuring that the answers have a value
-        one.setAnswer(3);
-        Two.setAnswer(5);
+        AutomaticResponseCreation();
+
+        //Ensuring the new list of survey responses has just 2 as I am looking for just survey responses related to Survey Test
+        assertEquals(2,controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(),survey.getName()).size());
+
+        //Ensuring the survey responses in my new list are the correct survey responses
+        ArrayList<Integer> expected1 = new ArrayList<Integer>(Arrays.asList(1,4));
+        ArrayList<Integer> expected2 = new ArrayList<Integer>(Arrays.asList(5,1));
+
+        assertEquals(expected1 , controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName()).get(0).getIndividualResponses());
+        assertEquals(expected2 , controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName()).get(1).getIndividualResponses());
+
+    }
+
+    @Test
+    public void ReturningListofSurveys()
+    {
+        //Here I am testing if a user can create multiple surveys
+
+        Survey survey1 = new Survey("first Survey");
+        Survey survey2 = new Survey("Second Survey");
+        Survey survey3 = new Survey("Third Survey");
+
+        surveys.add(survey1);
+        surveys.add(survey2);
+        surveys.add(survey3);
+
+        ArrayList<String> expected = new ArrayList<>(Arrays.asList("first Survey","Second Survey","Third Survey"));
+
+
+        assertEquals(3, controller.MultipleSurveys(surveys).size());
+        assertEquals(expected, controller.MultipleSurveys(surveys));
+
+
+    }
+    @Test
+    public void SurveyResponseByQuestion()
+    {
+        //Testing that a user can find a survey response based on a specific survey
+
+        //Produces three surveys 2 questions have the name of customer service so it should return 2 values instead of the full 6 questions
+        AutomaticResponseCreation();
+
+        String questionname = "Customer Service";
+
+
+        ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(1,5));
+
+        assertEquals(expected, controller.SurveyResponseByQuestion(AutomaticResponseCreation(),questionname));
+
+    }
+
+
+    @Test
+    public void getAverageForSurveyTest(){
+
+        //Testing for the average value of a survey
+
+        //This returns three survey responses
+        AutomaticResponseCreation();
+        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+
+        //This filters those survey responses into values based on a specific survey
+        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+
+        assertEquals(2.75, controller.SurveyAverage(Nameresponses), 1e-3);
+
+    }
+
+    @Test
+    public void getSurveySD(){
+
+        //Testing for the standard deviation of a survey
+
+        //This returns three survey responses
+        AutomaticResponseCreation();
+
+        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+
+        //This filters those survey responses into values based on a specific survey
+        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+
+        assertEquals(1.7853, controller.getSurveySD(Nameresponses), 1e-4);
+
+
+    }
+
+    @Test
+    public void getMaxSurvey(){
+
+        //Testing for the maximum value in a survey
+
+        //This returns three survey responses
+        AutomaticResponseCreation();
+
+        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+
+        //This filters those survey responses into values based on a specific survey
+        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+
+        assertEquals(5, controller.getMaxSurvey(Nameresponses), 1e-1);
+
+
+    }
+
+    @Test
+    public void getMinSurvey(){
+
+        //Testing for the minimum value in a survey
+
+        //This returns three survey responses
+        AutomaticResponseCreation();
+
+        ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
+
+        //This filters those survey responses into values based on a specific survey
+        Nameresponses = controller.ReponseSurveyBySurveyName(AutomaticResponseCreation(), survey.getName());
+
+        assertEquals(1, controller.getMinSurvey(Nameresponses), 1e-1);
+
+
+    }
+    @Test
+    public void getAverageForQuestion(){
+
+        //Testing the average score for a specific question
+
+        //This supplies the three survey responses with 6 questions
+        AutomaticResponseCreation();
+        ArrayList<Integer>Nameresponses = new ArrayList<>();
+        String questionname = "Customer Service";
+
+        //This filters these 6 questions down to just 2 with the same name
+        Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
+
+        //This ensures I am getting the correct average
+        assertEquals(3, controller.getQuestionAverage(Nameresponses), 1e-1);
+
+    }
+
+    @Test
+    public void getQuestionSD(){
+
+
+        //Testing the standard deviation for a specific question
+
+        //This supplies the three survey responses with 6 questions
+        AutomaticResponseCreation();
+
+        ArrayList<Integer>Nameresponses = new ArrayList<>();
+        String questionname = "Customer Service";
+
+        //This filters these 6 questions down to just 2 with the same name
+
+        Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
+
+        assertEquals(2, controller.getQuestionSD(Nameresponses), 1e-1);
+
+
+    }
+
+    @Test
+    public void getMaxQuestion(){
+
+        //Testing the standard deviation for a specific question
+
+        //This supplies the three survey responses with 6 questions
+        AutomaticResponseCreation();
+
+        ArrayList<Integer>Nameresponses = new ArrayList<>();
+        String questionname = "Customer Service";
+
+        Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
+
+        assertEquals(5, controller.getMaxQuestion(Nameresponses), 1e-1);
+
+
+    }
+
+    @Test
+    public void getMinQuestion(){
+
+        //Testing the standard deviation for a specific question
+
+        //This supplies the three survey responses with 6 questions
+        AutomaticResponseCreation();
+
+        ArrayList<Integer>Nameresponses = new ArrayList<>();
+        String questionname = "Customer Service";
+
+        Nameresponses = controller.SurveyResponseByQuestion(AutomaticResponseCreation(), questionname);
+
+        assertEquals(1, controller.getMinQuestion(Nameresponses), 1e-1);
+
+
+    }
+
+
+    public ArrayList<SurveyResponse> AutomaticResponseCreation()
+    {
+
+        //Ensuring that the answers have a value
+        ArrayList<Question> questions = new ArrayList<Question>();
+
+        Survey survey = new Survey("Survey Test");
+        Question one = new Question("Customer Service");
+        Question Two = new Question("Cleanliness");
+        one.setAnswer(1);
+        Two.setAnswer(4);
 
         //adding question to list
         questions.add(one);
@@ -272,8 +479,8 @@ public class TestJunit {
         //=============================================================================================================
 
         Survey surveyTwo = new Survey("Survey Quality");
-        Question newqone = new Question("Customer Service");
-        Question newqtwo = new Question("Cleanliness");
+        Question newqone = new Question("Food Service");
+        Question newqtwo = new Question("Quality");
 
         newqone.setAnswer(4);
         newqtwo.setAnswer(3);
@@ -310,39 +517,12 @@ public class TestJunit {
         responses.add(surveyr2);
         responses.add(surveyr3);
 
-        //Ensuring the new list of survey responses has just 2 as I am looking for just survey responses related to Survey Test
-        assertEquals(2,controller.ReponseSurveyBySurveyName(responses,survey.getName()).size());
 
-        //Ensuring the survey responses in my new list are the correct survey responses
-        ArrayList<Integer> expected1 = new ArrayList<Integer>(Arrays.asList(3,5));
-        ArrayList<Integer> expected2 = new ArrayList<Integer>(Arrays.asList(5,1));
 
-        assertEquals(expected1 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(0).getIndividualResponses());
-        assertEquals(expected2 , controller.ReponseSurveyBySurveyName(responses, survey.getName()).get(1).getIndividualResponses());
-
+        return responses;
     }
 
-    @Test
-    public void ReturningListofSurveys()
-    {
-        //Here I am testing if a user can create multiple surveys
 
-        Survey survey1 = new Survey("first Survey");
-        Survey survey2 = new Survey("Second Survey");
-        Survey survey3 = new Survey("Third Survey");
-
-        surveys.add(survey1);
-        surveys.add(survey2);
-        surveys.add(survey3);
-
-        ArrayList<String> expected = new ArrayList<>(Arrays.asList("first Survey","Second Survey","Third Survey"));
-
-
-        assertEquals(3, controller.MultipleSurveys(surveys).size());
-        assertEquals(expected, controller.MultipleSurveys(surveys));
-
-
-    }
 
 
 }

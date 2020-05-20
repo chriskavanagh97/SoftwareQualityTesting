@@ -32,4 +32,8 @@ public class SurveyResponse {
     public String getSurveyname() {
         return surveyname;
     }
+
+    public ArrayList<Question> getQuestions() {
+        return questions;
+    }
 }

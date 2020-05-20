@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
@@ -201,7 +202,56 @@
       <option name="project" value="LOCAL" />
       <updated>1589898951858</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Test added calculating Survey Average">
+      <created>1589969713916</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1589969713916</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Functionality added for test, now PASS">
+      <created>1589969752201</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1589969752201</updated>
+    </task>
+    <task id="LOCAL-00021" summary="3 more tests added for Survey calculations all FAIL">
+      <created>1589970121326</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1589970121326</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Standard Deviation Test PASS">
+      <created>1589972538286</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1589972538286</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Max and Min calculations now PASS">
+      <created>1589972895633</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1589972895633</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added a test to get Survey Response by Question Name PASS">
+      <created>1589977270322</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1589977270322</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Question Calculations added PASS">
+      <created>1589978351644</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1589978351644</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,7 +268,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="branch created" />
     <MESSAGE value="Pulled from develop class" />
     <MESSAGE value="fixing format of comments" />
     <MESSAGE value="Added Develop question branch" />
@@ -237,6 +286,13 @@
     <MESSAGE value="test created for survey response by survey Name. Fail" />
     <MESSAGE value="Two additional tests added to ensure correct responses are retrieved FAIL" />
     <MESSAGE value="All test PASS" />
-    <option name="LAST_COMMIT_MESSAGE" value="All test PASS" />
+    <MESSAGE value="Test added calculating Survey Average" />
+    <MESSAGE value="Functionality added for test, now PASS" />
+    <MESSAGE value="3 more tests added for Survey calculations all FAIL" />
+    <MESSAGE value="Standard Deviation Test PASS" />
+    <MESSAGE value="Max and Min calculations now PASS" />
+    <MESSAGE value="Added a test to get Survey Response by Question Name PASS" />
+    <MESSAGE value="Question Calculations added PASS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question Calculations added PASS" />
   </component>
 </project>

@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Controller {
 String a ="quality";
@@ -107,5 +109,207 @@ String a ="quality";
         }
         return targetresponses;
     }
+
+    public ArrayList<Integer> SurveyResponseByQuestion(ArrayList<SurveyResponse> responses, String questionname )
+    {
+
+        ArrayList<Integer> targetresponses = new ArrayList<>();
+
+        for(SurveyResponse CurrentsurveyResponse: responses)
+        {
+            for(Question question : CurrentsurveyResponse.getQuestions()){
+
+
+
+                    if(question.getQuestion().equals(questionname))
+                    {
+                        targetresponses.add(question.getAnswer());
+
+                    }
+            }
+
+        }
+        return targetresponses;
+    }
+
+
+
+    public double SurveyAverage(ArrayList<SurveyResponse>responses){
+
+        double total = 0;
+        int size = 0;
+
+        for(SurveyResponse reponse : responses)
+        {
+
+            for(int i : reponse.getIndividualResponses()){
+
+                total += i;
+                size += 1;
+
+            }
+        }
+        return total/size;
+    }
+
+    public double getSurveySD(ArrayList<SurveyResponse>responses){
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        double total = 0;
+        int size = 0;
+
+        double standardDeviation = 0.0;
+
+
+        for(SurveyResponse surveyResponse : responses)
+        {
+            for(int i : surveyResponse.getIndividualResponses()){
+
+                total += i;
+                size += 1;
+                responselist.add(i);
+            }
+        }
+
+
+        double mean = total/size;
+
+        for(double num: responselist) {
+            standardDeviation += Math.pow(num - mean, 2);
+        }
+
+        return Math.sqrt(standardDeviation/size);
+    }
+
+    public int getMinSurvey(ArrayList<SurveyResponse>responses){
+
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        int minnum = 0;
+
+
+
+        for(SurveyResponse surveyResponse : responses)
+        {
+            for(int i : surveyResponse.getIndividualResponses()){
+
+                responselist.add(i);
+            }
+        }
+        minnum = Collections.min(responselist);
+
+
+
+        return minnum;
+
+    }
+
+    public int getMaxSurvey(ArrayList<SurveyResponse>responses){
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        int maxnum = 0;
+
+
+
+        for(SurveyResponse surveyResponse : responses)
+        {
+            for(int i : surveyResponse.getIndividualResponses()){
+
+                responselist.add(i);
+            }
+        }
+        maxnum = Collections.max(responselist);
+
+        return maxnum;
+    }
+
+    public double getQuestionAverage(ArrayList<Integer>responses){
+
+        double total = 0;
+        int size = 0;
+
+
+            for(int i : responses){
+
+                total += i;
+                size += 1;
+
+            }
+
+        return total/size;
+    }
+
+    public double getQuestionSD(ArrayList<Integer>responses){
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        double total = 0;
+        int size = 0;
+
+        double standardDeviation = 0.0;
+
+
+
+            for(int i : responses){
+
+                total += i;
+                size += 1;
+                responselist.add(i);
+            }
+
+
+
+        double mean = total/size;
+
+        for(double num: responselist) {
+            standardDeviation += Math.pow(num - mean, 2);
+        }
+
+        return Math.sqrt(standardDeviation/size);
+    }
+
+    public int getMinQuestion(ArrayList<Integer>responses){
+
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        int minnum = 0;
+
+
+
+
+            for(int i : responses){
+
+                responselist.add(i);
+            }
+
+        minnum = Collections.min(responselist);
+
+
+
+        return minnum;
+
+    }
+
+    public int getMaxQuestion(ArrayList<Integer>responses){
+
+        ArrayList<Integer> responselist = new ArrayList<>();
+
+        int maxnum = 0;
+
+
+            for(int i : responses){
+
+                responselist.add(i);
+            }
+
+        maxnum = Collections.max(responselist);
+
+        return maxnum;
+    }
+
 
 }
