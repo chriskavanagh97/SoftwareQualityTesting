@@ -3,15 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/TestJunit.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TestJunit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestJunit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Survey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Survey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myElementSize" value="308" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,8 +37,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Images" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\I352778\IdeaProjects\SoftwareQualityTesting\src\Images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -251,7 +261,35 @@
       <option name="project" value="LOCAL" />
       <updated>1589978351644</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Test Coverage intro added">
+      <created>1589981616996</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1589981616996</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Code coverage selection">
+      <created>1589982381734</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1589982381734</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Changes made to ensure Test Coverage is higher">
+      <created>1589983118258</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1589983118258</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Screenshots added">
+      <created>1589983856746</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1589983856746</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,10 +306,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Pulled from develop class" />
-    <MESSAGE value="fixing format of comments" />
-    <MESSAGE value="Added Develop question branch" />
-    <MESSAGE value="Added in a test, to test blank questions. Test Failed" />
     <MESSAGE value="Added functionality test now a PASS" />
     <MESSAGE value="Test added to ensure questions are created correctly" />
     <MESSAGE value="Changes made as requested" />
@@ -293,6 +327,13 @@
     <MESSAGE value="Max and Min calculations now PASS" />
     <MESSAGE value="Added a test to get Survey Response by Question Name PASS" />
     <MESSAGE value="Question Calculations added PASS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question Calculations added PASS" />
+    <MESSAGE value="Test Coverage intro added" />
+    <MESSAGE value="Code coverage selection" />
+    <MESSAGE value="Changes made to ensure Test Coverage is higher" />
+    <MESSAGE value="Screenshots added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Screenshots added" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareQualityTesting$TestJunit.ic" NAME="TestJunit Coverage Results" MODIFIED="1589984285128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

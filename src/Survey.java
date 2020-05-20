@@ -29,25 +29,15 @@ public class Survey {
 
     }
 
-    //Add a single question to my survey
-    public void add(Question q)
-    {
-        this.questions.add(q);
-    }
-
     //Getting name for survey
     public String getName() {
         return name;
     }
-    public void setName(String name) {
-            this.name = name;
-        }
+
 
     public ArrayList<Question> getQuestions() {
         return questions;
     }
-    public void setQuestions(ArrayList<Question> questions) {
-        this.questions = questions;
-    }
+
 
 }
