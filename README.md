@@ -154,7 +154,7 @@ Do comments exist that describe the intent of the code? Are all functions commen
 Each member of the team will review code by checking if it passes the 6 stages. If the code doesn't pass a stage the member will be required to say why it doesn't pass this test and say how it should be changed.
 
 The developer will then be required to make these changes, and create a new pull request with new changes 
-=======
+
 ### [ Test Coverage Tool ](https://www.guru99.com/test-coverage-in-software-testing.html)
 
 Test coverage is defined as a metric in Software Testing that measures the amount of testing performed by a set of test. It will include gathering information about which parts of a program are executed when running the test suite to determine which branches of conditional statements have been taken.
