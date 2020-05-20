@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba4fa076-9677-4032-a894-bbeec76ab85b" name="Default Changelist" comment="">
+    <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Survey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SoftwareQualityTesting/Survey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Question.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myElementSize" value="308" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -15,11 +30,21 @@
   <component name="ProjectId" id="1bzfkfaBkMyaK0cu44GLKU7DWd7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Images" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\I352778\IdeaProjects\SoftwareQualityTesting\src\Images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -33,31 +58,282 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="TestJunit" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="SoftwareQualityTesting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJunit" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="SoftwareQualityTesting" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestJunit" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="Develop branch committed">
-      <created>1589641922377</created>
+    <task id="LOCAL-00001" summary="Pulled from develop class">
+      <created>1589649782380</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1589641922377</updated>
+      <updated>1589649782380</updated>
     </task>
-    <task id="LOCAL-00002" summary="TDD into and explanation created">
-      <created>1589642382892</created>
+    <task id="LOCAL-00002" summary="fixing format of comments">
+      <created>1589659783296</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1589642382892</updated>
+      <updated>1589659783296</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Develop question branch">
+      <created>1589660792958</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589660792958</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added in a test, to test blank questions. Test Failed">
+      <created>1589661605619</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589661605619</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added functionality test now a PASS">
+      <created>1589661700799</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589661700799</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test added to ensure questions are created correctly">
+      <created>1589721601975</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589721601975</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Changes made as requested">
+      <created>1589722035160</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589722035160</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Test for Survey Response and functionality added PASS">
+      <created>1589736473631</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1589736473631</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added in two tests both FAIL : code needs to be refactored to pass">
+      <created>1589738476131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1589738476131</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Code changed and test now PASS">
+      <created>1589738627941</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1589738627941</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Test for multiple surveyResponses PASS">
+      <created>1589890626858</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1589890626858</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Test created for getting individual responses PASS">
+      <created>1589891243429</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1589891243429</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Comments added">
+      <created>1589892828030</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1589892828030</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Test created for survey by name Fail">
+      <created>1589894867650</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1589894867650</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Fixed functionality for test PASS">
+      <created>1589894894135</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1589894894135</updated>
+    </task>
+    <task id="LOCAL-00016" summary="test created for survey response by survey Name. Fail">
+      <created>1589895946261</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589895946261</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Two additional tests added to ensure correct responses are retrieved FAIL">
+      <created>1589897201273</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1589897201273</updated>
+    </task>
+    <task id="LOCAL-00018" summary="All test PASS">
+      <created>1589898951858</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1589898951858</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Test added calculating Survey Average">
+      <created>1589969713916</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1589969713916</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Functionality added for test, now PASS">
+      <created>1589969752201</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1589969752201</updated>
+    </task>
+    <task id="LOCAL-00021" summary="3 more tests added for Survey calculations all FAIL">
+      <created>1589970121326</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1589970121326</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Standard Deviation Test PASS">
+      <created>1589972538286</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1589972538286</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Max and Min calculations now PASS">
+      <created>1589972895633</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1589972895633</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added a test to get Survey Response by Question Name PASS">
+      <created>1589977270322</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1589977270322</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Question Calculations added PASS">
+      <created>1589978351644</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1589978351644</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Test Coverage intro added">
+      <created>1589981616996</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1589981616996</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Code coverage selection">
+      <created>1589982381734</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1589982381734</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Changes made to ensure Test Coverage is higher">
+      <created>1589983118258</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1589983118258</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Screenshots added">
+      <created>1589983856746</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1589983856746</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Version control explained" />
-    <MESSAGE value="Develop branch committed" />
-    <MESSAGE value="TDD into and explanation created" />
-    <option name="LAST_COMMIT_MESSAGE" value="TDD into and explanation created" />
+    <MESSAGE value="Added functionality test now a PASS" />
+    <MESSAGE value="Test added to ensure questions are created correctly" />
+    <MESSAGE value="Changes made as requested" />
+    <MESSAGE value="Test for Survey Response and functionality added PASS" />
+    <MESSAGE value="Added in two tests both FAIL : code needs to be refactored to pass" />
+    <MESSAGE value="Code changed and test now PASS" />
+    <MESSAGE value="Test for multiple surveyResponses PASS" />
+    <MESSAGE value="Test created for getting individual responses PASS" />
+    <MESSAGE value="Comments added" />
+    <MESSAGE value="Test created for survey by name Fail" />
+    <MESSAGE value="Fixed functionality for test PASS" />
+    <MESSAGE value="test created for survey response by survey Name. Fail" />
+    <MESSAGE value="Two additional tests added to ensure correct responses are retrieved FAIL" />
+    <MESSAGE value="All test PASS" />
+    <MESSAGE value="Test added calculating Survey Average" />
+    <MESSAGE value="Functionality added for test, now PASS" />
+    <MESSAGE value="3 more tests added for Survey calculations all FAIL" />
+    <MESSAGE value="Standard Deviation Test PASS" />
+    <MESSAGE value="Max and Min calculations now PASS" />
+    <MESSAGE value="Added a test to get Survey Response by Question Name PASS" />
+    <MESSAGE value="Question Calculations added PASS" />
+    <MESSAGE value="Test Coverage intro added" />
+    <MESSAGE value="Code coverage selection" />
+    <MESSAGE value="Changes made to ensure Test Coverage is higher" />
+    <MESSAGE value="Screenshots added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Screenshots added" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SoftwareQualityTesting$TestJunit.ic" NAME="TestJunit Coverage Results" MODIFIED="1589984285128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
