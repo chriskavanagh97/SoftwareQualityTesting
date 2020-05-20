@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c67ba45b-e446-410d-8384-1f4b7143df38" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Survey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Survey.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myAutoScrollToSource" value="true" />
+    <option name="myElementSize" value="259" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -255,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589981616996</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Code coverage selection">
+      <created>1589982381734</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1589982381734</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,7 +283,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixing format of comments" />
     <MESSAGE value="Added Develop question branch" />
     <MESSAGE value="Added in a test, to test blank questions. Test Failed" />
     <MESSAGE value="Added functionality test now a PASS" />
@@ -297,9 +307,10 @@
     <MESSAGE value="Added a test to get Survey Response by Question Name PASS" />
     <MESSAGE value="Question Calculations added PASS" />
     <MESSAGE value="Test Coverage intro added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Coverage intro added" />
+    <MESSAGE value="Code coverage selection" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code coverage selection" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SoftwareQualityTesting$TestJunit.ic" NAME="TestJunit Coverage Results" MODIFIED="1589980624352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SoftwareQualityTesting$TestJunit.ic" NAME="TestJunit Coverage Results" MODIFIED="1589983058472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

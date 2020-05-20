@@ -26,10 +26,6 @@ public class Question {
         return question;
     }
 
-    public void setQuestion(String question) {
-        this.question = question;
-    }
-
     public int getAnswer() {
         return answer;
     }
