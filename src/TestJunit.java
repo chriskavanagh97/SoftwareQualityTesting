@@ -350,7 +350,7 @@ public class TestJunit {
 
         AutomaticResponseCreation();
 
-        assertEquals(2.5, controller.SurveyAverage(AutomaticResponseCreation()), 1e-3);
+        assertEquals(2.75, controller.SurveyAverage(AutomaticResponseCreation()), 1e-3);
 
     }
 
@@ -359,7 +359,7 @@ public class TestJunit {
 
         AutomaticResponseCreation();
 
-        assertEquals(2.5, controller.getSurveySD(AutomaticResponseCreation()), 1e-3);
+        assertEquals(1.7853, controller.getSurveySD(AutomaticResponseCreation()), 1e-4);
 
     }
 
@@ -440,6 +440,7 @@ public class TestJunit {
         ArrayList<SurveyResponse> responses = new ArrayList<>();
         responses.add(surveyr);
         responses.add(surveyr2);
+        responses.add(surveyr3);
 
         ArrayList<SurveyResponse>Nameresponses = new ArrayList<>();
         Nameresponses = controller.ReponseSurveyBySurveyName(responses, survey.getName());

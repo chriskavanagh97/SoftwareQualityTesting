@@ -129,13 +129,32 @@ String a ="quality";
 
     public double getSurveySD(ArrayList<SurveyResponse>responses){
 
-        ArrayList<Integer> nums = new ArrayList<>();
+        ArrayList<Integer> responselist = new ArrayList<>();
+
         double total = 0;
+        int size = 0;
+
         double standardDeviation = 0.0;
 
 
+        for(SurveyResponse surveyResponse : responses)
+        {
+            for(int i : surveyResponse.getIndividualResponses()){
 
-        return standardDeviation;
+                total += i;
+                size += 1;
+                responselist.add(i);
+            }
+        }
+
+
+        double mean = total/size;
+
+        for(double num: responselist) {
+            standardDeviation += Math.pow(num - mean, 2);
+        }
+
+        return Math.sqrt(standardDeviation/size);
     }
 
     public int getMinSurvey(ArrayList<SurveyResponse>responses){
